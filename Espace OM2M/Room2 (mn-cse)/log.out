@@ -6878,3 +6878,519 @@ Response in Router= ResponsePrimitive [responseStatusCode=2000,
  from=/Room2,
  contentType=application/xml,
 ]
+[2020-11-18 19:55:22,936 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+Starting Data Mapper
+[2020-11-18 19:55:22,937 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+Registering XML Mapper Service..
+[2020-11-18 19:55:23,366 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+XML Mapper service registered.
+[2020-11-18 19:55:23,366 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+Registering JSON Mapper Service..
+[2020-11-18 19:55:23,558 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+JSON Mapper service registered.
+[2020-11-18 19:55:23,560 INFO] - org.eclipse.om2m.binding.http.Activator 
+Register HTTP RestClientService..
+[2020-11-18 19:55:23,564 INFO] - org.eclipse.om2m.binding.http.Activator 
+HTTP RestClientService is registered.
+[2020-11-18 19:55:23,566 INFO] - org.eclipse.om2m.persistence.eclipselink.Activator 
+Starting Persistence JPA plugin...
+[2020-11-18 19:55:23,566 INFO] - org.eclipse.om2m.binding.http.Activator 
+HttpService discovered
+[2020-11-18 19:55:23,567 INFO] - org.eclipse.om2m.binding.http.Activator 
+Register / context
+[2020-11-18 19:55:23,567 INFO] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl 
+Initializing Database...
+[2020-11-18 19:55:23,567 INFO] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl 
+Creating new EntityManagerFactory...
+[2020-11-18 19:55:23,598 INFO] - org.eclipse.om2m.core.Activator 
+Starting CSE...
+[2020-11-18 19:55:23,599 INFO] - org.eclipse.om2m.core.Activator 
+Added Data Mapper Service: application/xml
+[2020-11-18 19:55:23,600 INFO] - org.eclipse.om2m.core.Activator 
+Added Data Mapper Service: application/json
+[2020-11-18 19:55:23,600 INFO] - org.eclipse.om2m.core.Activator 
+Rest client service discovered. Protocol: http
+[2020-11-18 19:55:23,601 INFO] - org.eclipse.om2m.webapp.resourcesbrowser.xml.Activator 
+HttpService discovered
+[2020-11-18 19:55:23,601 INFO] - org.eclipse.om2m.webapp.resourcesbrowser.xml.Activator 
+Register /webpage http context
+[2020-11-18 19:55:23,999 ERROR] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl 
+Error in creation of EntityManagerFactory
+javax.persistence.PersistenceException: Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.h2.jdbc.JdbcSQLException: Database may be already in use: "C:/Users/bapti/Desktop/5e année/Cours/Architecture de service et intergiciel IoT standard/Intergiciels pour IoT/Projet/Automatic-management-of-INSA-s-rooms/Espace OM2M/Room2 (mn-cse)/database/mndb.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-186]
+Error Code: 90020
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:766)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.getAbstractSession(EntityManagerFactoryDelegate.java:204)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.getDatabaseSession(EntityManagerFactoryDelegate.java:182)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.getDatabaseSession(EntityManagerFactoryImpl.java:527)
+	at org.eclipse.persistence.jpa.PersistenceProvider.createEntityManagerFactoryImpl(PersistenceProvider.java:140)
+	at org.eclipse.persistence.jpa.PersistenceProvider.createEntityManagerFactory(PersistenceProvider.java:177)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:79)
+	at org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl.init(DBServiceJPAImpl.java:103)
+	at org.eclipse.om2m.persistence.eclipselink.Activator$1.run(Activator.java:51)
+Caused by: Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.h2.jdbc.JdbcSQLException: Database may be already in use: "C:/Users/bapti/Desktop/5e année/Cours/Architecture de service et intergiciel IoT standard/Intergiciels pour IoT/Projet/Automatic-management-of-INSA-s-rooms/Espace OM2M/Room2 (mn-cse)/database/mndb.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-186]
+Error Code: 90020
+	at org.eclipse.persistence.exceptions.DatabaseException.sqlException(DatabaseException.java:331)
+	at org.eclipse.persistence.exceptions.DatabaseException.sqlException(DatabaseException.java:326)
+	at org.eclipse.persistence.sessions.DefaultConnector.connect(DefaultConnector.java:138)
+	at org.eclipse.persistence.sessions.DatasourceLogin.connectToDatasource(DatasourceLogin.java:162)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.setOrDetectDatasource(DatabaseSessionImpl.java:204)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.loginAndDetectDatasource(DatabaseSessionImpl.java:741)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryProvider.login(EntityManagerFactoryProvider.java:239)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:685)
+	... 8 more
+Caused by: org.h2.jdbc.JdbcSQLException: Database may be already in use: "C:/Users/bapti/Desktop/5e année/Cours/Architecture de service et intergiciel IoT standard/Intergiciels pour IoT/Projet/Automatic-management-of-INSA-s-rooms/Espace OM2M/Room2 (mn-cse)/database/mndb.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-186]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:108)
+	at org.h2.engine.Database.getPageStore(Database.java:2386)
+	at org.h2.engine.Database.open(Database.java:666)
+	at org.h2.engine.Database.openDatabase(Database.java:266)
+	at org.h2.engine.Database.<init>(Database.java:260)
+	at org.h2.engine.Engine.openSession(Engine.java:60)
+	at org.h2.engine.Engine.openSession(Engine.java:167)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:145)
+	at org.h2.engine.Engine.createSession(Engine.java:128)
+	at org.h2.engine.Engine.createSession(Engine.java:26)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:347)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:108)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:92)
+	at org.h2.Driver.connect(Driver.java:72)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at org.eclipse.persistence.sessions.DefaultConnector.connect(DefaultConnector.java:98)
+	... 13 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/bapti/Desktop/5e année/Cours/Architecture de service et intergiciel IoT standard/Intergiciels pour IoT/Projet/Automatic-management-of-INSA-s-rooms/Espace OM2M/Room2 (mn-cse)/database/mndb.mv.db [1.4.186/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:773)
+	at org.h2.mvstore.FileStore.open(FileStore.java:170)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:340)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2785)
+	at org.h2.mvstore.db.MVTableEngine$Store.<init>(MVTableEngine.java:162)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:98)
+	... 29 more
+[2020-11-18 19:55:24,003 ERROR] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl 
+ERROR initializing Database: EntityManagerFactory is null!
+[2020-11-18 19:55:24,005 INFO] - org.eclipse.om2m.persistence.eclipselink.Activator 
+Registering Database (JPA-EL) Service
+[2020-11-18 19:55:24,006 INFO] - org.eclipse.om2m.core.Activator 
+DataBase persistence service discovered
+[2020-11-18 19:55:24,007 INFO] - org.eclipse.om2m.core.thread.CoreExecutor 
+Creating thread pool with corePoolSize=5 & maximumSize=50
+[2020-11-18 19:55:24,010 INFO] - org.eclipse.om2m.core.CSEInitializer 
+Initializating the cseBase
+[2020-11-18 19:56:11,080 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-11-18 19:56:11,081 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/Room2,
+ resultContent=5,
+ ]
+[2020-11-18 19:56:11,081 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/xml
+[2020-11-18 19:56:11,081 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/xml
+[2020-11-18 19:56:11,081 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: application/xml
+[2020-11-18 19:56:11,081 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/Room2,
+ from=admin:admin,
+ resultContent=5,
+ returnContentType=application/xml,
+ requestContentType=application/xml,
+ queryStrings={rcn=[5]}]
+[2020-11-18 19:56:11,081 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /Room2
+[2020-11-18 19:56:11,081 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [CSEBaseController]
+[2020-11-18 19:56:11,083 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [responseStatusCode=2000,
+ content=<?xml version="1.0" encoding="UTF-8"?>
+<m2m:cb xmlns:m2m="http://www.onem2m.org/xml/protocols" rn="Room2">
+   <ty>5</ty>
+   <ri>/Room2</ri>
+   <ct>20201118T164858</ct>
+   <lt>20201118T164858</lt>
+   <acpi>/Room2/acp-558582104</acpi>
+   <cst>1</cst>
+   <csi>Room2</csi>
+   <srt>1 2 3 4 5 9 14 15 16 17 23</srt>
+   <poa>http://127.0.0.1:8282/</poa>
+   <ch rn="acp_admin" ty="1">/Room2/acp-558582104</ch>
+   <ch rn="acpae-201889110" ty="1">/Room2/acp-982245038</ch>
+   <ch rn="acpae-673459861" ty="1">/Room2/acp-858547506</ch>
+   <ch rn="acpae-681539513" ty="1">/Room2/acp-350483455</ch>
+   <ch rn="acpae-813709382" ty="1">/Room2/acp-96614596</ch>
+   <ch rn="acpae-195041986" ty="1">/Room2/acp-362595959</ch>
+   <ch rn="acpae-737609728" ty="1">/Room2/acp-404037459</ch>
+   <ch rn="acpae-35556640" ty="1">/Room2/acp-834850670</ch>
+   <ch rn="acpae-270142396" ty="1">/Room2/acp-709348392</ch>
+   <ch rn="acpae-69856322" ty="1">/Room2/acp-98007151</ch>
+   <ch rn="Light1" ty="2">/Room2/CAE201889110</ch>
+   <ch rn="Light2" ty="2">/Room2/CAE673459861</ch>
+   <ch rn="Light3" ty="2">/Room2/CAE681539513</ch>
+   <ch rn="Window1" ty="2">/Room2/CAE813709382</ch>
+   <ch rn="Window2" ty="2">/Room2/CAE195041986</ch>
+   <ch rn="Heating1" ty="2">/Room2/CAE737609728</ch>
+   <ch rn="Door1" ty="2">/Room2/CAE35556640</ch>
+   <ch rn="Temperature" ty="2">/Room2/CAE270142396</ch>
+   <ch rn="Presence" ty="2">/Room2/CAE69856322</ch>
+   <ch rn="GEI" ty="16">/Room2/csr-461429374</ch>
+</m2m:cb>
+,
+ to=admin:admin,
+ from=/Room2,
+ contentType=application/xml,
+]
+[2020-11-18 19:56:11,833 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-11-18 19:56:11,833 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/Room2/CAE813709382,
+ resultContent=5,
+ ]
+[2020-11-18 19:56:11,833 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/xml
+[2020-11-18 19:56:11,833 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/xml
+[2020-11-18 19:56:11,834 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: application/xml
+[2020-11-18 19:56:11,834 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/Room2/CAE813709382,
+ from=admin:admin,
+ resultContent=5,
+ returnContentType=application/xml,
+ requestContentType=application/xml,
+ queryStrings={rcn=[5]}]
+[2020-11-18 19:56:11,834 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /Room2/CAE813709382
+[2020-11-18 19:56:11,834 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [AEController]
+[2020-11-18 19:56:11,834 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [responseStatusCode=2000,
+ content=<?xml version="1.0" encoding="UTF-8"?>
+<m2m:ae xmlns:m2m="http://www.onem2m.org/xml/protocols" rn="Window1">
+   <ty>2</ty>
+   <ri>/Room2/CAE813709382</ri>
+   <pi>/Room2</pi>
+   <ct>20201118T180036</ct>
+   <lt>20201118T180036</lt>
+   <lbl>Type/window Location/Room2</lbl>
+   <acpi>/Room2/acp-96614596</acpi>
+   <et>20211118T180036</et>
+   <api> Window_1 </api>
+   <aei>CAE813709382</aei>
+   <ch rn="DATA" ty="3">/Room2/cnt-672206720</ch>
+   <rr>false</rr>
+</m2m:ae>
+,
+ to=admin:admin,
+ from=/Room2,
+ contentType=application/xml,
+]
+[2020-11-18 20:00:24,871 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+Starting Data Mapper
+[2020-11-18 20:00:24,872 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+Registering XML Mapper Service..
+[2020-11-18 20:00:25,394 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+XML Mapper service registered.
+[2020-11-18 20:00:25,395 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+Registering JSON Mapper Service..
+[2020-11-18 20:00:25,584 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+JSON Mapper service registered.
+[2020-11-18 20:00:25,585 INFO] - org.eclipse.om2m.binding.http.Activator 
+Register HTTP RestClientService..
+[2020-11-18 20:00:25,589 INFO] - org.eclipse.om2m.binding.http.Activator 
+HTTP RestClientService is registered.
+[2020-11-18 20:00:25,590 INFO] - org.eclipse.om2m.persistence.eclipselink.Activator 
+Starting Persistence JPA plugin...
+[2020-11-18 20:00:25,590 INFO] - org.eclipse.om2m.binding.http.Activator 
+HttpService discovered
+[2020-11-18 20:00:25,591 INFO] - org.eclipse.om2m.binding.http.Activator 
+Register / context
+[2020-11-18 20:00:25,591 INFO] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl 
+Initializing Database...
+[2020-11-18 20:00:25,591 INFO] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl 
+Creating new EntityManagerFactory...
+[2020-11-18 20:00:25,620 INFO] - org.eclipse.om2m.core.Activator 
+Starting CSE...
+[2020-11-18 20:00:25,621 INFO] - org.eclipse.om2m.core.Activator 
+Added Data Mapper Service: application/xml
+[2020-11-18 20:00:25,622 INFO] - org.eclipse.om2m.core.Activator 
+Added Data Mapper Service: application/json
+[2020-11-18 20:00:25,623 INFO] - org.eclipse.om2m.core.Activator 
+Rest client service discovered. Protocol: http
+[2020-11-18 20:00:25,624 INFO] - org.eclipse.om2m.webapp.resourcesbrowser.xml.Activator 
+HttpService discovered
+[2020-11-18 20:00:25,624 INFO] - org.eclipse.om2m.webapp.resourcesbrowser.xml.Activator 
+Register /webpage http context
+[2020-11-18 20:00:26,274 INFO] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl 
+DataBase initialized.
+[2020-11-18 20:00:26,285 INFO] - org.eclipse.om2m.persistence.eclipselink.Activator 
+Registering Database (JPA-EL) Service
+[2020-11-18 20:00:26,286 INFO] - org.eclipse.om2m.core.Activator 
+DataBase persistence service discovered
+[2020-11-18 20:00:26,287 INFO] - org.eclipse.om2m.core.thread.CoreExecutor 
+Creating thread pool with corePoolSize=5 & maximumSize=50
+[2020-11-18 20:00:26,288 INFO] - org.eclipse.om2m.core.CSEInitializer 
+Initializating the cseBase
+[2020-11-18 20:00:26,302 INFO] - org.eclipse.om2m.core.CSEInitializer 
+cseBase already initialized
+[2020-11-18 20:00:26,302 INFO] - org.eclipse.om2m.core.Activator 
+Registering CseService...
+[2020-11-18 20:00:26,306 INFO] - org.eclipse.om2m.binding.http.Activator 
+CseService discovered
+[2020-11-18 20:00:26,306 INFO] - org.eclipse.om2m.core.Activator 
+CSE Started
+[2020-11-18 20:00:46,117 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-11-18 20:00:46,119 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/Room2,
+ resultContent=5,
+ ]
+[2020-11-18 20:00:46,120 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/xml
+[2020-11-18 20:00:46,120 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/xml
+[2020-11-18 20:00:46,120 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: application/xml
+[2020-11-18 20:00:46,121 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/Room2,
+ from=admin:admin,
+ resultContent=5,
+ returnContentType=application/xml,
+ requestContentType=application/xml,
+ queryStrings={rcn=[5]}]
+[2020-11-18 20:00:46,123 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /Room2
+[2020-11-18 20:00:46,124 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [CSEBaseController]
+[2020-11-18 20:00:46,158 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [responseStatusCode=2000,
+ content=<?xml version="1.0" encoding="UTF-8"?>
+<m2m:cb xmlns:m2m="http://www.onem2m.org/xml/protocols" rn="Room2">
+   <ty>5</ty>
+   <ri>/Room2</ri>
+   <ct>20201118T164858</ct>
+   <lt>20201118T164858</lt>
+   <acpi>/Room2/acp-558582104</acpi>
+   <cst>1</cst>
+   <csi>Room2</csi>
+   <srt>1 2 3 4 5 9 14 15 16 17 23</srt>
+   <poa>http://127.0.0.1:8282/</poa>
+   <ch rn="acp_admin" ty="1">/Room2/acp-558582104</ch>
+   <ch rn="acpae-201889110" ty="1">/Room2/acp-982245038</ch>
+   <ch rn="acpae-673459861" ty="1">/Room2/acp-858547506</ch>
+   <ch rn="acpae-681539513" ty="1">/Room2/acp-350483455</ch>
+   <ch rn="acpae-813709382" ty="1">/Room2/acp-96614596</ch>
+   <ch rn="acpae-195041986" ty="1">/Room2/acp-362595959</ch>
+   <ch rn="acpae-737609728" ty="1">/Room2/acp-404037459</ch>
+   <ch rn="acpae-35556640" ty="1">/Room2/acp-834850670</ch>
+   <ch rn="acpae-270142396" ty="1">/Room2/acp-709348392</ch>
+   <ch rn="acpae-69856322" ty="1">/Room2/acp-98007151</ch>
+   <ch rn="Light1" ty="2">/Room2/CAE201889110</ch>
+   <ch rn="Light2" ty="2">/Room2/CAE673459861</ch>
+   <ch rn="Light3" ty="2">/Room2/CAE681539513</ch>
+   <ch rn="Window1" ty="2">/Room2/CAE813709382</ch>
+   <ch rn="Window2" ty="2">/Room2/CAE195041986</ch>
+   <ch rn="Heating1" ty="2">/Room2/CAE737609728</ch>
+   <ch rn="Door1" ty="2">/Room2/CAE35556640</ch>
+   <ch rn="Temperature" ty="2">/Room2/CAE270142396</ch>
+   <ch rn="Presence" ty="2">/Room2/CAE69856322</ch>
+   <ch rn="GEI" ty="16">/Room2/csr-461429374</ch>
+</m2m:cb>
+,
+ to=admin:admin,
+ from=/Room2,
+ contentType=application/xml,
+]
+[2020-11-18 20:00:47,108 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-11-18 20:00:47,108 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/Room2/CAE813709382,
+ resultContent=5,
+ ]
+[2020-11-18 20:00:47,109 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/xml
+[2020-11-18 20:00:47,109 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/xml
+[2020-11-18 20:00:47,110 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: application/xml
+[2020-11-18 20:00:47,110 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/Room2/CAE813709382,
+ from=admin:admin,
+ resultContent=5,
+ returnContentType=application/xml,
+ requestContentType=application/xml,
+ queryStrings={rcn=[5]}]
+[2020-11-18 20:00:47,140 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /Room2/CAE813709382
+[2020-11-18 20:00:47,141 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [AEController]
+[2020-11-18 20:00:47,150 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [responseStatusCode=2000,
+ content=<?xml version="1.0" encoding="UTF-8"?>
+<m2m:ae xmlns:m2m="http://www.onem2m.org/xml/protocols" rn="Window1">
+   <ty>2</ty>
+   <ri>/Room2/CAE813709382</ri>
+   <pi>/Room2</pi>
+   <ct>20201118T180036</ct>
+   <lt>20201118T180036</lt>
+   <lbl>Location/Room2 Type/window</lbl>
+   <acpi>/Room2/acp-96614596</acpi>
+   <et>20211118T180036</et>
+   <api> Window_1 </api>
+   <aei>CAE813709382</aei>
+   <ch rn="DATA" ty="3">/Room2/cnt-672206720</ch>
+   <rr>false</rr>
+</m2m:ae>
+,
+ to=admin:admin,
+ from=/Room2,
+ contentType=application/xml,
+]
+[2020-11-18 20:00:47,471 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-11-18 20:00:47,472 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/Room2/CAE681539513,
+ resultContent=5,
+ ]
+[2020-11-18 20:00:47,472 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/xml
+[2020-11-18 20:00:47,473 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/xml
+[2020-11-18 20:00:47,473 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: application/xml
+[2020-11-18 20:00:47,473 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/Room2/CAE681539513,
+ from=admin:admin,
+ resultContent=5,
+ returnContentType=application/xml,
+ requestContentType=application/xml,
+ queryStrings={rcn=[5]}]
+[2020-11-18 20:00:47,474 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /Room2/CAE681539513
+[2020-11-18 20:00:47,474 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [AEController]
+[2020-11-18 20:00:47,479 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [responseStatusCode=2000,
+ content=<?xml version="1.0" encoding="UTF-8"?>
+<m2m:ae xmlns:m2m="http://www.onem2m.org/xml/protocols" rn="Light3">
+   <ty>2</ty>
+   <ri>/Room2/CAE681539513</ri>
+   <pi>/Room2</pi>
+   <ct>20201118T175908</ct>
+   <lt>20201118T175908</lt>
+   <lbl>Location/Room2 Type/light</lbl>
+   <acpi>/Room2/acp-350483455</acpi>
+   <et>20211118T175908</et>
+   <api> Light_3 </api>
+   <aei>CAE681539513</aei>
+   <ch rn="DATA" ty="3">/Room2/cnt-328714560</ch>
+   <rr>false</rr>
+</m2m:ae>
+,
+ to=admin:admin,
+ from=/Room2,
+ contentType=application/xml,
+]
+[2020-11-18 20:00:47,938 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-11-18 20:00:47,938 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/Room2/CAE681539513,
+ resultContent=5,
+ ]
+[2020-11-18 20:00:47,939 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/xml
+[2020-11-18 20:00:47,939 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/xml
+[2020-11-18 20:00:47,940 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: application/xml
+[2020-11-18 20:00:47,940 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/Room2/CAE681539513,
+ from=admin:admin,
+ resultContent=5,
+ returnContentType=application/xml,
+ requestContentType=application/xml,
+ queryStrings={rcn=[5]}]
+[2020-11-18 20:00:47,941 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /Room2/CAE681539513
+[2020-11-18 20:00:47,941 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [AEController]
+[2020-11-18 20:00:47,944 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [responseStatusCode=2000,
+ content=<?xml version="1.0" encoding="UTF-8"?>
+<m2m:ae xmlns:m2m="http://www.onem2m.org/xml/protocols" rn="Light3">
+   <ty>2</ty>
+   <ri>/Room2/CAE681539513</ri>
+   <pi>/Room2</pi>
+   <ct>20201118T175908</ct>
+   <lt>20201118T175908</lt>
+   <lbl>Location/Room2 Type/light</lbl>
+   <acpi>/Room2/acp-350483455</acpi>
+   <et>20211118T175908</et>
+   <api> Light_3 </api>
+   <aei>CAE681539513</aei>
+   <ch rn="DATA" ty="3">/Room2/cnt-328714560</ch>
+   <rr>false</rr>
+</m2m:ae>
+,
+ to=admin:admin,
+ from=/Room2,
+ contentType=application/xml,
+]
+[2020-11-18 20:00:48,319 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-11-18 20:00:48,319 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/Room2/cnt-328714560,
+ resultContent=5,
+ ]
+[2020-11-18 20:00:48,320 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/xml
+[2020-11-18 20:00:48,320 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/xml
+[2020-11-18 20:00:48,321 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: application/xml
+[2020-11-18 20:00:48,321 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/Room2/cnt-328714560,
+ from=admin:admin,
+ resultContent=5,
+ returnContentType=application/xml,
+ requestContentType=application/xml,
+ queryStrings={rcn=[5]}]
+[2020-11-18 20:00:48,322 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /Room2/cnt-328714560
+[2020-11-18 20:00:48,322 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [ContainerController]
+[2020-11-18 20:00:48,328 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [responseStatusCode=2000,
+ content=<?xml version="1.0" encoding="UTF-8"?>
+<m2m:cnt xmlns:m2m="http://www.onem2m.org/xml/protocols" rn="DATA">
+   <ty>3</ty>
+   <ri>/Room2/cnt-328714560</ri>
+   <pi>/Room2/CAE681539513</pi>
+   <ct>20201118T180604</ct>
+   <lt>20201118T180604</lt>
+   <lbl>Location/Room2</lbl>
+   <acpi>/Room2/acp-350483455</acpi>
+   <et>20211118T180604</et>
+   <st>1</st>
+   <mni>1000</mni>
+   <mbs>10000</mbs>
+   <mia>0</mia>
+   <cni>1</cni>
+   <cbs>1</cbs>
+   <ch rn="cin_880814975" ty="4">/Room2/cin-880814975</ch>
+   <ol>/Room2/Room2/Light3/DATA/ol</ol>
+   <la>/Room2/Room2/Light3/DATA/la</la>
+</m2m:cnt>
+,
+ to=admin:admin,
+ from=/Room2,
+ contentType=application/xml,
+]

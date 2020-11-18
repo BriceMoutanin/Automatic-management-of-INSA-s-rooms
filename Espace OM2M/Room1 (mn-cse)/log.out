@@ -17311,3 +17311,111 @@ Response in Router= ResponsePrimitive [responseStatusCode=2000,
  from=/Room1,
  contentType=application/xml,
 ]
+[2020-11-18 19:55:20,486 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+Starting Data Mapper
+[2020-11-18 19:55:20,487 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+Registering XML Mapper Service..
+[2020-11-18 19:55:21,021 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+XML Mapper service registered.
+[2020-11-18 19:55:21,021 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+Registering JSON Mapper Service..
+[2020-11-18 19:55:21,212 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+JSON Mapper service registered.
+[2020-11-18 19:55:21,214 INFO] - org.eclipse.om2m.binding.http.Activator 
+Register HTTP RestClientService..
+[2020-11-18 19:55:21,218 INFO] - org.eclipse.om2m.binding.http.Activator 
+HTTP RestClientService is registered.
+[2020-11-18 19:55:21,219 INFO] - org.eclipse.om2m.persistence.eclipselink.Activator 
+Starting Persistence JPA plugin...
+[2020-11-18 19:55:21,219 INFO] - org.eclipse.om2m.binding.http.Activator 
+HttpService discovered
+[2020-11-18 19:55:21,220 INFO] - org.eclipse.om2m.binding.http.Activator 
+Register / context
+[2020-11-18 19:55:21,220 INFO] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl 
+Initializing Database...
+[2020-11-18 19:55:21,220 INFO] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl 
+Creating new EntityManagerFactory...
+[2020-11-18 19:55:21,250 INFO] - org.eclipse.om2m.core.Activator 
+Starting CSE...
+[2020-11-18 19:55:21,251 INFO] - org.eclipse.om2m.core.Activator 
+Added Data Mapper Service: application/xml
+[2020-11-18 19:55:21,252 INFO] - org.eclipse.om2m.core.Activator 
+Added Data Mapper Service: application/json
+[2020-11-18 19:55:21,252 INFO] - org.eclipse.om2m.core.Activator 
+Rest client service discovered. Protocol: http
+[2020-11-18 19:55:21,254 INFO] - org.eclipse.om2m.webapp.resourcesbrowser.xml.Activator 
+HttpService discovered
+[2020-11-18 19:55:21,254 INFO] - org.eclipse.om2m.webapp.resourcesbrowser.xml.Activator 
+Register /webpage http context
+[2020-11-18 19:55:21,931 INFO] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl 
+DataBase initialized.
+[2020-11-18 19:55:21,943 INFO] - org.eclipse.om2m.persistence.eclipselink.Activator 
+Registering Database (JPA-EL) Service
+[2020-11-18 19:55:21,944 INFO] - org.eclipse.om2m.core.Activator 
+DataBase persistence service discovered
+[2020-11-18 19:55:21,945 INFO] - org.eclipse.om2m.core.thread.CoreExecutor 
+Creating thread pool with corePoolSize=5 & maximumSize=50
+[2020-11-18 19:55:21,946 INFO] - org.eclipse.om2m.core.CSEInitializer 
+Initializating the cseBase
+[2020-11-18 19:55:21,960 INFO] - org.eclipse.om2m.core.CSEInitializer 
+cseBase already initialized
+[2020-11-18 19:55:21,960 INFO] - org.eclipse.om2m.core.Activator 
+Registering CseService...
+[2020-11-18 19:55:21,964 INFO] - org.eclipse.om2m.binding.http.Activator 
+CseService discovered
+[2020-11-18 19:55:21,964 INFO] - org.eclipse.om2m.core.Activator 
+CSE Started
+[2020-11-18 20:00:22,290 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+Starting Data Mapper
+[2020-11-18 20:00:22,291 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+Registering XML Mapper Service..
+[2020-11-18 20:00:22,810 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+XML Mapper service registered.
+[2020-11-18 20:00:22,810 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+Registering JSON Mapper Service..
+[2020-11-18 20:00:23,017 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+JSON Mapper service registered.
+[2020-11-18 20:00:23,019 INFO] - org.eclipse.om2m.binding.http.Activator 
+Register HTTP RestClientService..
+[2020-11-18 20:00:23,023 INFO] - org.eclipse.om2m.binding.http.Activator 
+HTTP RestClientService is registered.
+[2020-11-18 20:00:23,024 INFO] - org.eclipse.om2m.persistence.eclipselink.Activator 
+Starting Persistence JPA plugin...
+[2020-11-18 20:00:23,025 INFO] - org.eclipse.om2m.binding.http.Activator 
+HttpService discovered
+[2020-11-18 20:00:23,025 INFO] - org.eclipse.om2m.binding.http.Activator 
+Register / context
+[2020-11-18 20:00:23,026 INFO] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl 
+Initializing Database...
+[2020-11-18 20:00:23,026 INFO] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl 
+Creating new EntityManagerFactory...
+[2020-11-18 20:00:23,055 INFO] - org.eclipse.om2m.core.Activator 
+Starting CSE...
+[2020-11-18 20:00:23,056 INFO] - org.eclipse.om2m.core.Activator 
+Added Data Mapper Service: application/xml
+[2020-11-18 20:00:23,057 INFO] - org.eclipse.om2m.core.Activator 
+Added Data Mapper Service: application/json
+[2020-11-18 20:00:23,057 INFO] - org.eclipse.om2m.core.Activator 
+Rest client service discovered. Protocol: http
+[2020-11-18 20:00:23,059 INFO] - org.eclipse.om2m.webapp.resourcesbrowser.xml.Activator 
+HttpService discovered
+[2020-11-18 20:00:23,059 INFO] - org.eclipse.om2m.webapp.resourcesbrowser.xml.Activator 
+Register /webpage http context
+[2020-11-18 20:00:23,707 INFO] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl 
+DataBase initialized.
+[2020-11-18 20:00:23,718 INFO] - org.eclipse.om2m.persistence.eclipselink.Activator 
+Registering Database (JPA-EL) Service
+[2020-11-18 20:00:23,719 INFO] - org.eclipse.om2m.core.Activator 
+DataBase persistence service discovered
+[2020-11-18 20:00:23,720 INFO] - org.eclipse.om2m.core.thread.CoreExecutor 
+Creating thread pool with corePoolSize=5 & maximumSize=50
+[2020-11-18 20:00:23,721 INFO] - org.eclipse.om2m.core.CSEInitializer 
+Initializating the cseBase
+[2020-11-18 20:00:23,735 INFO] - org.eclipse.om2m.core.CSEInitializer 
+cseBase already initialized
+[2020-11-18 20:00:23,735 INFO] - org.eclipse.om2m.core.Activator 
+Registering CseService...
+[2020-11-18 20:00:23,739 INFO] - org.eclipse.om2m.binding.http.Activator 
+CseService discovered
+[2020-11-18 20:00:23,739 INFO] - org.eclipse.om2m.core.Activator 
+CSE Started
