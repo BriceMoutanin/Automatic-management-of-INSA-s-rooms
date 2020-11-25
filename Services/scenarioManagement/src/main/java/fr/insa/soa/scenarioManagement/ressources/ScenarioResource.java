@@ -16,6 +16,7 @@ public class ScenarioResource {
 	
 	// SCENARIO entre 7h et 20h TEMP < 15°C => allumer les radiateurs d'une pièce 
 	//Implémentation des horaires de fonctionnement de chaque scénario dans le service global 
+	//Récupere une les infos d'une salle et si la temp<15, allume les chauffages avec un POST de 1
 	public void setHeating(Classroom classroom) {
 		Sensor t = classroom.getTemp();
 		ArrayList<Actuator> h_list= classroom.getHeating();
