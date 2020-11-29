@@ -8850,3 +8850,158 @@ Response in Router= ResponsePrimitive [responseStatusCode=2000,
  from=/Room2,
  contentType=application/json,
 ]
+[2020-11-29 15:43:40,408 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+Starting Data Mapper
+[2020-11-29 15:43:40,408 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+Starting Data Mapper
+[2020-11-29 15:43:40,409 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+Registering XML Mapper Service..
+[2020-11-29 15:43:40,409 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+Registering XML Mapper Service..
+[2020-11-29 15:43:41,109 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+XML Mapper service registered.
+[2020-11-29 15:43:41,109 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+Registering JSON Mapper Service..
+[2020-11-29 15:43:41,136 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+XML Mapper service registered.
+[2020-11-29 15:43:41,136 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+Registering JSON Mapper Service..
+[2020-11-29 15:43:41,334 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+JSON Mapper service registered.
+[2020-11-29 15:43:41,336 INFO] - org.eclipse.om2m.binding.http.Activator 
+Register HTTP RestClientService..
+[2020-11-29 15:43:41,340 INFO] - org.eclipse.om2m.binding.http.Activator 
+HTTP RestClientService is registered.
+[2020-11-29 15:43:41,342 INFO] - org.eclipse.om2m.persistence.eclipselink.Activator 
+Starting Persistence JPA plugin...
+[2020-11-29 15:43:41,342 INFO] - org.eclipse.om2m.binding.http.Activator 
+HttpService discovered
+[2020-11-29 15:43:41,343 INFO] - org.eclipse.om2m.binding.http.Activator 
+Register / context
+[2020-11-29 15:43:41,343 INFO] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl 
+Initializing Database...
+[2020-11-29 15:43:41,344 INFO] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl 
+Creating new EntityManagerFactory...
+[2020-11-29 15:43:41,370 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+JSON Mapper service registered.
+[2020-11-29 15:43:41,372 INFO] - org.eclipse.om2m.binding.http.Activator 
+Register HTTP RestClientService..
+[2020-11-29 15:43:41,377 INFO] - org.eclipse.om2m.binding.http.Activator 
+HTTP RestClientService is registered.
+[2020-11-29 15:43:41,380 INFO] - org.eclipse.om2m.persistence.eclipselink.Activator 
+Starting Persistence JPA plugin...
+[2020-11-29 15:43:41,380 INFO] - org.eclipse.om2m.binding.http.Activator 
+HttpService discovered
+[2020-11-29 15:43:41,381 INFO] - org.eclipse.om2m.binding.http.Activator 
+Register / context
+[2020-11-29 15:43:41,382 INFO] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl 
+Initializing Database...
+[2020-11-29 15:43:41,382 INFO] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl 
+Creating new EntityManagerFactory...
+[2020-11-29 15:43:41,385 INFO] - org.eclipse.om2m.core.Activator 
+Starting CSE...
+[2020-11-29 15:43:41,385 INFO] - org.eclipse.om2m.core.Activator 
+Added Data Mapper Service: application/xml
+[2020-11-29 15:43:41,387 INFO] - org.eclipse.om2m.core.Activator 
+Added Data Mapper Service: application/json
+[2020-11-29 15:43:41,388 INFO] - org.eclipse.om2m.core.Activator 
+Rest client service discovered. Protocol: http
+[2020-11-29 15:43:41,391 INFO] - org.eclipse.om2m.webapp.resourcesbrowser.xml.Activator 
+HttpService discovered
+[2020-11-29 15:43:41,391 INFO] - org.eclipse.om2m.webapp.resourcesbrowser.xml.Activator 
+Register /webpage http context
+[2020-11-29 15:43:41,421 INFO] - org.eclipse.om2m.core.Activator 
+Starting CSE...
+[2020-11-29 15:43:41,422 INFO] - org.eclipse.om2m.core.Activator 
+Added Data Mapper Service: application/xml
+[2020-11-29 15:43:41,423 INFO] - org.eclipse.om2m.core.Activator 
+Added Data Mapper Service: application/json
+[2020-11-29 15:43:41,423 INFO] - org.eclipse.om2m.core.Activator 
+Rest client service discovered. Protocol: http
+[2020-11-29 15:43:41,425 INFO] - org.eclipse.om2m.webapp.resourcesbrowser.xml.Activator 
+HttpService discovered
+[2020-11-29 15:43:41,425 INFO] - org.eclipse.om2m.webapp.resourcesbrowser.xml.Activator 
+Register /webpage http context
+[2020-11-29 15:43:41,979 ERROR] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl 
+Error in creation of EntityManagerFactory
+javax.persistence.PersistenceException: Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.h2.jdbc.JdbcSQLException: Database may be already in use: "C:/Users/bapti/Desktop/5e année/Cours/Architecture de service et intergiciel IoT standard/Intergiciels pour IoT/Projet/Automatic-management-of-INSA-s-rooms/Espace OM2M/Room2 (mn-cse)/database/mndb.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-186]
+Error Code: 90020
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:766)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.getAbstractSession(EntityManagerFactoryDelegate.java:204)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.getDatabaseSession(EntityManagerFactoryDelegate.java:182)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.getDatabaseSession(EntityManagerFactoryImpl.java:527)
+	at org.eclipse.persistence.jpa.PersistenceProvider.createEntityManagerFactoryImpl(PersistenceProvider.java:140)
+	at org.eclipse.persistence.jpa.PersistenceProvider.createEntityManagerFactory(PersistenceProvider.java:177)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:79)
+	at org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl.init(DBServiceJPAImpl.java:103)
+	at org.eclipse.om2m.persistence.eclipselink.Activator$1.run(Activator.java:51)
+Caused by: Exception [EclipseLink-4002] (Eclipse Persistence Services - 2.5.2.v20140319-9ad6abd): org.eclipse.persistence.exceptions.DatabaseException
+Internal Exception: org.h2.jdbc.JdbcSQLException: Database may be already in use: "C:/Users/bapti/Desktop/5e année/Cours/Architecture de service et intergiciel IoT standard/Intergiciels pour IoT/Projet/Automatic-management-of-INSA-s-rooms/Espace OM2M/Room2 (mn-cse)/database/mndb.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-186]
+Error Code: 90020
+	at org.eclipse.persistence.exceptions.DatabaseException.sqlException(DatabaseException.java:331)
+	at org.eclipse.persistence.exceptions.DatabaseException.sqlException(DatabaseException.java:326)
+	at org.eclipse.persistence.sessions.DefaultConnector.connect(DefaultConnector.java:138)
+	at org.eclipse.persistence.sessions.DatasourceLogin.connectToDatasource(DatasourceLogin.java:162)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.setOrDetectDatasource(DatabaseSessionImpl.java:204)
+	at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.loginAndDetectDatasource(DatabaseSessionImpl.java:741)
+	at org.eclipse.persistence.internal.jpa.EntityManagerFactoryProvider.login(EntityManagerFactoryProvider.java:239)
+	at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:685)
+	... 8 more
+Caused by: org.h2.jdbc.JdbcSQLException: Database may be already in use: "C:/Users/bapti/Desktop/5e année/Cours/Architecture de service et intergiciel IoT standard/Intergiciels pour IoT/Projet/Automatic-management-of-INSA-s-rooms/Espace OM2M/Room2 (mn-cse)/database/mndb.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-186]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:108)
+	at org.h2.engine.Database.getPageStore(Database.java:2386)
+	at org.h2.engine.Database.open(Database.java:666)
+	at org.h2.engine.Database.openDatabase(Database.java:266)
+	at org.h2.engine.Database.<init>(Database.java:260)
+	at org.h2.engine.Engine.openSession(Engine.java:60)
+	at org.h2.engine.Engine.openSession(Engine.java:167)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:145)
+	at org.h2.engine.Engine.createSession(Engine.java:128)
+	at org.h2.engine.Engine.createSession(Engine.java:26)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:347)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:108)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:92)
+	at org.h2.Driver.connect(Driver.java:72)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at org.eclipse.persistence.sessions.DefaultConnector.connect(DefaultConnector.java:98)
+	... 13 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/bapti/Desktop/5e année/Cours/Architecture de service et intergiciel IoT standard/Intergiciels pour IoT/Projet/Automatic-management-of-INSA-s-rooms/Espace OM2M/Room2 (mn-cse)/database/mndb.mv.db [1.4.186/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:773)
+	at org.h2.mvstore.FileStore.open(FileStore.java:170)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:340)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2785)
+	at org.h2.mvstore.db.MVTableEngine$Store.<init>(MVTableEngine.java:162)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:98)
+	... 29 more
+[2020-11-29 15:43:41,982 ERROR] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl 
+ERROR initializing Database: EntityManagerFactory is null!
+[2020-11-29 15:43:41,982 INFO] - org.eclipse.om2m.persistence.eclipselink.Activator 
+Registering Database (JPA-EL) Service
+[2020-11-29 15:43:41,983 INFO] - org.eclipse.om2m.core.Activator 
+DataBase persistence service discovered
+[2020-11-29 15:43:41,984 INFO] - org.eclipse.om2m.core.thread.CoreExecutor 
+Creating thread pool with corePoolSize=5 & maximumSize=50
+[2020-11-29 15:43:41,986 INFO] - org.eclipse.om2m.core.CSEInitializer 
+Initializating the cseBase
+[2020-11-29 15:43:42,224 INFO] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl 
+DataBase initialized.
+[2020-11-29 15:43:42,237 INFO] - org.eclipse.om2m.persistence.eclipselink.Activator 
+Registering Database (JPA-EL) Service
+[2020-11-29 15:43:42,237 INFO] - org.eclipse.om2m.core.Activator 
+DataBase persistence service discovered
+[2020-11-29 15:43:42,238 INFO] - org.eclipse.om2m.core.thread.CoreExecutor 
+Creating thread pool with corePoolSize=5 & maximumSize=50
+[2020-11-29 15:43:42,240 INFO] - org.eclipse.om2m.core.CSEInitializer 
+Initializating the cseBase
+[2020-11-29 15:43:42,254 INFO] - org.eclipse.om2m.core.CSEInitializer 
+cseBase already initialized
+[2020-11-29 15:43:42,254 INFO] - org.eclipse.om2m.core.Activator 
+Registering CseService...
+[2020-11-29 15:43:42,258 INFO] - org.eclipse.om2m.binding.http.Activator 
+CseService discovered
+[2020-11-29 15:43:42,258 INFO] - org.eclipse.om2m.core.Activator 
+CSE Started
