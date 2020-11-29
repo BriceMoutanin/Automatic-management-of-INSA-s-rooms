@@ -19,11 +19,11 @@ import java.util.ArrayList;
 public class ClassroomResource {
 	public static String[] ports = {"8181","8282"}; //recense les ports(mn-cse) de toutes les salles du GEI
 	public static String[][] portRoomAssociation= getAllRooms();//associe chaque port au nom de son mn-cse (Room1, Room2...)
-	
-	
+
+
 	ArrayList<Classroom> classrooms = new ArrayList<Classroom>();
 	String url="";
-	
+
 	// Recuperer les noms des salles à partir des ports
 	@GetMapping("/rooms")
 	static public String[][] getAllRooms(){
@@ -35,7 +35,7 @@ public class ClassroomResource {
 		headers.set("x-m2m-origin", "admin:admin");
 		headers.set("Content-Type", "application/xml");
 		HttpEntity<String> entity = new HttpEntity<String>(headers);
-
+		//Recherche de nom pour chaque port
 		for (int i=0; i<ports.length;i++){
 			result[i][0]=ports[i];
 			url="http://localhost:"+ports[i];
@@ -55,10 +55,10 @@ public class ClassroomResource {
 	//Par exemple /8181/light renvoie "Room1/Room1/light1 Room1/Room1/light2"
 	@GetMapping("/{port}/{sensorType}")
 	public String getPathBySensorType(@PathVariable("port") String port, @PathVariable("sensorType") String type){
-		//URL de recherche de path par label 
+		//URL de recherche de path par label
 		String url="http://localhost:"+port+"?fu=1&lbl=Type/"+type;
-		
-		//Requete GET 
+
+		//Requete GET
 		RestTemplate rest = new RestTemplate();
 		HttpHeaders headers = new HttpHeaders();
 		headers.set("x-m2m-origin", "admin:admin");
@@ -72,7 +72,7 @@ public class ClassroomResource {
 	}
 
 	//Permet d'obtenir toutes les infos d'une classe donnée (sous forme de Classroom) à partir de son nom
-	//Exemple : /Room1/info 
+	//Exemple : /Room1/info
 	@GetMapping("/{room}/info")
 	public Classroom getClassroomInfo(@PathVariable String room){
 		//Recherche du port associé au nom de la salle donnée en argument
@@ -115,8 +115,8 @@ public class ClassroomResource {
 		System.out.println(presence.getDataOM2M());
 
 		//////// GET LIGHTS OF A ROOM //////////
-		//La seule difference ici c'est qu'il y a plusieurs path 
-		//donc on le fait dans une boucle for pour recup toutes 
+		//La seule difference ici c'est qu'il y a plusieurs path
+		//donc on le fait dans une boucle for pour recup toutes
 		//les données et les mettre dans le tableau d'Actuator
 		path = getPathBySensorType(port,"light");
 		String[] arrOfPathL = path.split(" ");
@@ -126,7 +126,7 @@ public class ClassroomResource {
 			lights.add(l);
 		}
 		//////// GET DOORS OF A ROOM //////////
-		//Tout pareil 
+		//Tout pareil
 		path = getPathBySensorType(port,"door");
 		String[] arrOfPathD = path.split(" ");
 		for (int j=0;j< arrOfPathD.length;j++){
@@ -155,7 +155,7 @@ public class ClassroomResource {
 		Classroom classroom = new Classroom(room,port,temperature, presence, heatings, lights, doors, windows);
 		return classroom;
 	}
-	
+
 //Je sais plus trop ce que c'est mais je l'ai commenté donc ça doit pas être important
 /*	@GetMapping("/{ports}/{type}")
 	public ArrayList<Integer> getData(@PathVariable("ports") String ports,@PathVariable("Type")  String Type){
@@ -187,7 +187,7 @@ public class ClassroomResource {
 
 	}*/
 
-	//Recupere les infos de TOUTES les salles 
+	//Recupere les infos de TOUTES les salles
 	@GetMapping("/classrooms/info")
 	public ArrayList<Classroom> getAllClassroomInfo(){
 		ArrayList<Classroom> classrooms= new ArrayList<Classroom>();

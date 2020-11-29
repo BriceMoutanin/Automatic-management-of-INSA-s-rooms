@@ -47008,3 +47008,2178 @@ ResponsePrimitive [responseStatusCode=2000,
  from=/in-cse,
  contentType=application/json;charset=ISO-8859-1,
 ]
+[2020-11-25 17:34:21,678 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-11-25 17:34:21,679 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/Room1/Room1/Temperature/DATA/la,
+ ]
+[2020-11-25 17:34:21,690 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/json
+[2020-11-25 17:34:21,691 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/json
+[2020-11-25 17:34:21,693 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: text/plain, application/json, application/*+json, */*
+[2020-11-25 17:34:21,694 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/Room1/Room1/Temperature/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:21,695 INFO] - org.eclipse.om2m.core.router.Router 
+Request targeting another CSE, forwarding to Redirector: /Room1/Room1/Temperature/DATA/la
+[2020-11-25 17:34:21,702 INFO] - org.eclipse.om2m.core.redirector.Redirector 
+RemoteCSE found: /Room1
+[2020-11-25 17:34:21,710 INFO] - org.eclipse.om2m.core.comm.RestClient 
+the requestIndication RC: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8181/~/Room1/Room1/Temperature/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:21,711 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Sending request: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8181/~/Room1/Room1/Temperature/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:21,715 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Request to be send: GET http://127.0.0.1:8181/~/Room1/Room1/Temperature/DATA/la HTTP/1.1
+[2020-11-25 17:34:21,715 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Headers:
+Accept: application/json
+X-M2M-Origin: admin:admin
+Content-Type: application/json
+
+[2020-11-25 17:34:21,779 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Http Client response: ResponsePrimitive [responseStatusCode=2000,
+ content={
+   "m2m:cin" : {
+      "rn" : "cin_813524480",
+      "ty" : 4,
+      "ri" : "/Room1/cin-813524480",
+      "pi" : "/Room1/cnt-721763740",
+      "ct" : "20201118T174109",
+      "lt" : "20201118T174109",
+      "st" : 0,
+      "cnf" : "message",
+      "cs" : 2,
+      "con" : "15"
+   }
+}
+,
+ to=admin:admin,
+ from=/in-cse,
+ contentType=application/json;charset=ISO-8859-1,
+]
+[2020-11-25 17:34:21,781 INFO] - org.eclipse.om2m.core.comm.RestClient 
+ResponsePrimitive [responseStatusCode=2000,
+ content={
+   "m2m:cin" : {
+      "rn" : "cin_813524480",
+      "ty" : 4,
+      "ri" : "/Room1/cin-813524480",
+      "pi" : "/Room1/cnt-721763740",
+      "ct" : "20201118T174109",
+      "lt" : "20201118T174109",
+      "st" : 0,
+      "cnf" : "message",
+      "cs" : 2,
+      "con" : "15"
+   }
+}
+,
+ to=admin:admin,
+ from=/in-cse,
+ contentType=application/json;charset=ISO-8859-1,
+]
+[2020-11-25 17:34:21,927 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-11-25 17:34:21,945 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/Room1/Room1/Presence/DATA/la,
+ ]
+[2020-11-25 17:34:21,952 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/json
+[2020-11-25 17:34:21,953 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/json
+[2020-11-25 17:34:21,959 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: text/plain, application/json, application/*+json, */*
+[2020-11-25 17:34:21,974 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/Room1/Room1/Presence/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:21,975 INFO] - org.eclipse.om2m.core.router.Router 
+Request targeting another CSE, forwarding to Redirector: /Room1/Room1/Presence/DATA/la
+[2020-11-25 17:34:21,979 INFO] - org.eclipse.om2m.core.redirector.Redirector 
+RemoteCSE found: /Room1
+[2020-11-25 17:34:21,980 INFO] - org.eclipse.om2m.core.comm.RestClient 
+the requestIndication RC: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8181/~/Room1/Room1/Presence/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:21,981 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Sending request: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8181/~/Room1/Room1/Presence/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:21,986 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Request to be send: GET http://127.0.0.1:8181/~/Room1/Room1/Presence/DATA/la HTTP/1.1
+[2020-11-25 17:34:22,009 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Headers:
+Accept: application/json
+X-M2M-Origin: admin:admin
+Content-Type: application/json
+
+[2020-11-25 17:34:22,109 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Http Client response: ResponsePrimitive [responseStatusCode=2000,
+ content={
+   "m2m:cin" : {
+      "rn" : "cin_686678094",
+      "ty" : 4,
+      "ri" : "/Room1/cin-686678094",
+      "pi" : "/Room1/cnt-997138804",
+      "ct" : "20201118T174056",
+      "lt" : "20201118T174056",
+      "st" : 0,
+      "cnf" : "message",
+      "cs" : 1,
+      "con" : "0"
+   }
+}
+,
+ to=admin:admin,
+ from=/in-cse,
+ contentType=application/json;charset=ISO-8859-1,
+]
+[2020-11-25 17:34:22,110 INFO] - org.eclipse.om2m.core.comm.RestClient 
+ResponsePrimitive [responseStatusCode=2000,
+ content={
+   "m2m:cin" : {
+      "rn" : "cin_686678094",
+      "ty" : 4,
+      "ri" : "/Room1/cin-686678094",
+      "pi" : "/Room1/cnt-997138804",
+      "ct" : "20201118T174056",
+      "lt" : "20201118T174056",
+      "st" : 0,
+      "cnf" : "message",
+      "cs" : 1,
+      "con" : "0"
+   }
+}
+,
+ to=admin:admin,
+ from=/in-cse,
+ contentType=application/json;charset=ISO-8859-1,
+]
+[2020-11-25 17:34:22,310 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-11-25 17:34:22,311 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/Room1/Room1/Light1/DATA/la,
+ ]
+[2020-11-25 17:34:22,326 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/json
+[2020-11-25 17:34:22,330 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/json
+[2020-11-25 17:34:22,334 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: text/plain, application/json, application/*+json, */*
+[2020-11-25 17:34:22,336 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/Room1/Room1/Light1/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:22,345 INFO] - org.eclipse.om2m.core.router.Router 
+Request targeting another CSE, forwarding to Redirector: /Room1/Room1/Light1/DATA/la
+[2020-11-25 17:34:22,360 INFO] - org.eclipse.om2m.core.redirector.Redirector 
+RemoteCSE found: /Room1
+[2020-11-25 17:34:22,374 INFO] - org.eclipse.om2m.core.comm.RestClient 
+the requestIndication RC: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8181/~/Room1/Room1/Light1/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:22,375 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Sending request: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8181/~/Room1/Room1/Light1/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:22,378 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Request to be send: GET http://127.0.0.1:8181/~/Room1/Room1/Light1/DATA/la HTTP/1.1
+[2020-11-25 17:34:22,378 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Headers:
+Accept: application/json
+X-M2M-Origin: admin:admin
+Content-Type: application/json
+
+[2020-11-25 17:34:22,478 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Http Client response: ResponsePrimitive [responseStatusCode=2000,
+ content={
+   "m2m:cin" : {
+      "rn" : "cin_461050589",
+      "ty" : 4,
+      "ri" : "/Room1/cin-461050589",
+      "pi" : "/Room1/cnt-623637576",
+      "ct" : "20201118T173404",
+      "lt" : "20201118T173404",
+      "st" : 0,
+      "cnf" : "message",
+      "cs" : 1,
+      "con" : "0"
+   }
+}
+,
+ to=admin:admin,
+ from=/in-cse,
+ contentType=application/json;charset=ISO-8859-1,
+]
+[2020-11-25 17:34:22,487 INFO] - org.eclipse.om2m.core.comm.RestClient 
+ResponsePrimitive [responseStatusCode=2000,
+ content={
+   "m2m:cin" : {
+      "rn" : "cin_461050589",
+      "ty" : 4,
+      "ri" : "/Room1/cin-461050589",
+      "pi" : "/Room1/cnt-623637576",
+      "ct" : "20201118T173404",
+      "lt" : "20201118T173404",
+      "st" : 0,
+      "cnf" : "message",
+      "cs" : 1,
+      "con" : "0"
+   }
+}
+,
+ to=admin:admin,
+ from=/in-cse,
+ contentType=application/json;charset=ISO-8859-1,
+]
+[2020-11-25 17:34:22,528 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-11-25 17:34:22,547 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/Room1/Room1/Light2/DATA/la,
+ ]
+[2020-11-25 17:34:22,549 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/json
+[2020-11-25 17:34:22,551 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/json
+[2020-11-25 17:34:22,553 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: text/plain, application/json, application/*+json, */*
+[2020-11-25 17:34:22,554 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/Room1/Room1/Light2/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:22,558 INFO] - org.eclipse.om2m.core.router.Router 
+Request targeting another CSE, forwarding to Redirector: /Room1/Room1/Light2/DATA/la
+[2020-11-25 17:34:22,587 INFO] - org.eclipse.om2m.core.redirector.Redirector 
+RemoteCSE found: /Room1
+[2020-11-25 17:34:22,588 INFO] - org.eclipse.om2m.core.comm.RestClient 
+the requestIndication RC: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8181/~/Room1/Room1/Light2/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:22,596 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Sending request: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8181/~/Room1/Room1/Light2/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:22,601 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Request to be send: GET http://127.0.0.1:8181/~/Room1/Room1/Light2/DATA/la HTTP/1.1
+[2020-11-25 17:34:22,605 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Headers:
+Accept: application/json
+X-M2M-Origin: admin:admin
+Content-Type: application/json
+
+[2020-11-25 17:34:22,680 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Http Client response: ResponsePrimitive [responseStatusCode=2000,
+ content={
+   "m2m:cin" : {
+      "rn" : "cin_109743861",
+      "ty" : 4,
+      "ri" : "/Room1/cin-109743861",
+      "pi" : "/Room1/cnt-707777614",
+      "ct" : "20201118T173608",
+      "lt" : "20201118T173608",
+      "st" : 0,
+      "cnf" : "message",
+      "cs" : 1,
+      "con" : "0"
+   }
+}
+,
+ to=admin:admin,
+ from=/in-cse,
+ contentType=application/json;charset=ISO-8859-1,
+]
+[2020-11-25 17:34:22,681 INFO] - org.eclipse.om2m.core.comm.RestClient 
+ResponsePrimitive [responseStatusCode=2000,
+ content={
+   "m2m:cin" : {
+      "rn" : "cin_109743861",
+      "ty" : 4,
+      "ri" : "/Room1/cin-109743861",
+      "pi" : "/Room1/cnt-707777614",
+      "ct" : "20201118T173608",
+      "lt" : "20201118T173608",
+      "st" : 0,
+      "cnf" : "message",
+      "cs" : 1,
+      "con" : "0"
+   }
+}
+,
+ to=admin:admin,
+ from=/in-cse,
+ contentType=application/json;charset=ISO-8859-1,
+]
+[2020-11-25 17:34:22,788 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-11-25 17:34:22,792 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/Room1/Room1/Door1/DATA/la,
+ ]
+[2020-11-25 17:34:22,795 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/json
+[2020-11-25 17:34:22,795 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/json
+[2020-11-25 17:34:22,803 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: text/plain, application/json, application/*+json, */*
+[2020-11-25 17:34:22,803 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/Room1/Room1/Door1/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:22,813 INFO] - org.eclipse.om2m.core.router.Router 
+Request targeting another CSE, forwarding to Redirector: /Room1/Room1/Door1/DATA/la
+[2020-11-25 17:34:22,823 INFO] - org.eclipse.om2m.core.redirector.Redirector 
+RemoteCSE found: /Room1
+[2020-11-25 17:34:22,834 INFO] - org.eclipse.om2m.core.comm.RestClient 
+the requestIndication RC: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8181/~/Room1/Room1/Door1/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:22,838 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Sending request: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8181/~/Room1/Room1/Door1/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:22,841 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Request to be send: GET http://127.0.0.1:8181/~/Room1/Room1/Door1/DATA/la HTTP/1.1
+[2020-11-25 17:34:22,853 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Headers:
+Accept: application/json
+X-M2M-Origin: admin:admin
+Content-Type: application/json
+
+[2020-11-25 17:34:22,915 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Http Client response: ResponsePrimitive [responseStatusCode=2000,
+ content={
+   "m2m:cin" : {
+      "rn" : "cin_955702097",
+      "ty" : 4,
+      "ri" : "/Room1/cin-955702097",
+      "pi" : "/Room1/cnt-863537273",
+      "ct" : "20201118T173724",
+      "lt" : "20201118T173724",
+      "st" : 0,
+      "cnf" : "message",
+      "cs" : 1,
+      "con" : "0"
+   }
+}
+,
+ to=admin:admin,
+ from=/in-cse,
+ contentType=application/json;charset=ISO-8859-1,
+]
+[2020-11-25 17:34:22,918 INFO] - org.eclipse.om2m.core.comm.RestClient 
+ResponsePrimitive [responseStatusCode=2000,
+ content={
+   "m2m:cin" : {
+      "rn" : "cin_955702097",
+      "ty" : 4,
+      "ri" : "/Room1/cin-955702097",
+      "pi" : "/Room1/cnt-863537273",
+      "ct" : "20201118T173724",
+      "lt" : "20201118T173724",
+      "st" : 0,
+      "cnf" : "message",
+      "cs" : 1,
+      "con" : "0"
+   }
+}
+,
+ to=admin:admin,
+ from=/in-cse,
+ contentType=application/json;charset=ISO-8859-1,
+]
+[2020-11-25 17:34:22,958 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-11-25 17:34:22,975 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/Room1/Room1/Door2/DATA/la,
+ ]
+[2020-11-25 17:34:22,975 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/json
+[2020-11-25 17:34:22,977 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/json
+[2020-11-25 17:34:22,978 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: text/plain, application/json, application/*+json, */*
+[2020-11-25 17:34:22,979 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/Room1/Room1/Door2/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:22,980 INFO] - org.eclipse.om2m.core.router.Router 
+Request targeting another CSE, forwarding to Redirector: /Room1/Room1/Door2/DATA/la
+[2020-11-25 17:34:22,986 INFO] - org.eclipse.om2m.core.redirector.Redirector 
+RemoteCSE found: /Room1
+[2020-11-25 17:34:22,997 INFO] - org.eclipse.om2m.core.comm.RestClient 
+the requestIndication RC: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8181/~/Room1/Room1/Door2/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:23,001 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Sending request: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8181/~/Room1/Room1/Door2/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:23,004 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Request to be send: GET http://127.0.0.1:8181/~/Room1/Room1/Door2/DATA/la HTTP/1.1
+[2020-11-25 17:34:23,017 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Headers:
+Accept: application/json
+X-M2M-Origin: admin:admin
+Content-Type: application/json
+
+[2020-11-25 17:34:23,081 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Http Client response: ResponsePrimitive [responseStatusCode=2000,
+ content={
+   "m2m:cin" : {
+      "rn" : "cin_898140608",
+      "ty" : 4,
+      "ri" : "/Room1/cin-898140608",
+      "pi" : "/Room1/cnt-6847022",
+      "ct" : "20201118T173728",
+      "lt" : "20201118T173728",
+      "st" : 0,
+      "cnf" : "message",
+      "cs" : 1,
+      "con" : "0"
+   }
+}
+,
+ to=admin:admin,
+ from=/in-cse,
+ contentType=application/json;charset=ISO-8859-1,
+]
+[2020-11-25 17:34:23,084 INFO] - org.eclipse.om2m.core.comm.RestClient 
+ResponsePrimitive [responseStatusCode=2000,
+ content={
+   "m2m:cin" : {
+      "rn" : "cin_898140608",
+      "ty" : 4,
+      "ri" : "/Room1/cin-898140608",
+      "pi" : "/Room1/cnt-6847022",
+      "ct" : "20201118T173728",
+      "lt" : "20201118T173728",
+      "st" : 0,
+      "cnf" : "message",
+      "cs" : 1,
+      "con" : "0"
+   }
+}
+,
+ to=admin:admin,
+ from=/in-cse,
+ contentType=application/json;charset=ISO-8859-1,
+]
+[2020-11-25 17:34:23,205 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-11-25 17:34:23,208 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/Room1/Room1/Window1/DATA/la,
+ ]
+[2020-11-25 17:34:23,214 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/json
+[2020-11-25 17:34:23,215 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/json
+[2020-11-25 17:34:23,222 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: text/plain, application/json, application/*+json, */*
+[2020-11-25 17:34:23,223 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/Room1/Room1/Window1/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:23,231 INFO] - org.eclipse.om2m.core.router.Router 
+Request targeting another CSE, forwarding to Redirector: /Room1/Room1/Window1/DATA/la
+[2020-11-25 17:34:23,240 INFO] - org.eclipse.om2m.core.redirector.Redirector 
+RemoteCSE found: /Room1
+[2020-11-25 17:34:23,255 INFO] - org.eclipse.om2m.core.comm.RestClient 
+the requestIndication RC: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8181/~/Room1/Room1/Window1/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:23,257 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Sending request: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8181/~/Room1/Room1/Window1/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:23,260 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Request to be send: GET http://127.0.0.1:8181/~/Room1/Room1/Window1/DATA/la HTTP/1.1
+[2020-11-25 17:34:23,260 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Headers:
+Accept: application/json
+X-M2M-Origin: admin:admin
+Content-Type: application/json
+
+[2020-11-25 17:34:23,331 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Http Client response: ResponsePrimitive [responseStatusCode=2000,
+ content={
+   "m2m:cin" : {
+      "rn" : "cin_179593852",
+      "ty" : 4,
+      "ri" : "/Room1/cin-179593852",
+      "pi" : "/Room1/cnt-880883445",
+      "ct" : "20201118T173620",
+      "lt" : "20201118T173620",
+      "st" : 0,
+      "cnf" : "message",
+      "cs" : 1,
+      "con" : "0"
+   }
+}
+,
+ to=admin:admin,
+ from=/in-cse,
+ contentType=application/json;charset=ISO-8859-1,
+]
+[2020-11-25 17:34:23,334 INFO] - org.eclipse.om2m.core.comm.RestClient 
+ResponsePrimitive [responseStatusCode=2000,
+ content={
+   "m2m:cin" : {
+      "rn" : "cin_179593852",
+      "ty" : 4,
+      "ri" : "/Room1/cin-179593852",
+      "pi" : "/Room1/cnt-880883445",
+      "ct" : "20201118T173620",
+      "lt" : "20201118T173620",
+      "st" : 0,
+      "cnf" : "message",
+      "cs" : 1,
+      "con" : "0"
+   }
+}
+,
+ to=admin:admin,
+ from=/in-cse,
+ contentType=application/json;charset=ISO-8859-1,
+]
+[2020-11-25 17:34:23,384 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-11-25 17:34:23,391 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/Room1/Room1/Window2/DATA/la,
+ ]
+[2020-11-25 17:34:23,393 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/json
+[2020-11-25 17:34:23,395 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/json
+[2020-11-25 17:34:23,396 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: text/plain, application/json, application/*+json, */*
+[2020-11-25 17:34:23,397 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/Room1/Room1/Window2/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:23,398 INFO] - org.eclipse.om2m.core.router.Router 
+Request targeting another CSE, forwarding to Redirector: /Room1/Room1/Window2/DATA/la
+[2020-11-25 17:34:23,402 INFO] - org.eclipse.om2m.core.redirector.Redirector 
+RemoteCSE found: /Room1
+[2020-11-25 17:34:23,413 INFO] - org.eclipse.om2m.core.comm.RestClient 
+the requestIndication RC: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8181/~/Room1/Room1/Window2/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:23,415 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Sending request: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8181/~/Room1/Room1/Window2/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:23,418 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Request to be send: GET http://127.0.0.1:8181/~/Room1/Room1/Window2/DATA/la HTTP/1.1
+[2020-11-25 17:34:23,418 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Headers:
+Accept: application/json
+X-M2M-Origin: admin:admin
+Content-Type: application/json
+
+[2020-11-25 17:34:23,489 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Http Client response: ResponsePrimitive [responseStatusCode=2000,
+ content={
+   "m2m:cin" : {
+      "rn" : "cin_786107706",
+      "ty" : 4,
+      "ri" : "/Room1/cin-786107706",
+      "pi" : "/Room1/cnt-696539090",
+      "ct" : "20201118T173626",
+      "lt" : "20201118T173626",
+      "st" : 0,
+      "cnf" : "message",
+      "cs" : 1,
+      "con" : "0"
+   }
+}
+,
+ to=admin:admin,
+ from=/in-cse,
+ contentType=application/json;charset=ISO-8859-1,
+]
+[2020-11-25 17:34:23,491 INFO] - org.eclipse.om2m.core.comm.RestClient 
+ResponsePrimitive [responseStatusCode=2000,
+ content={
+   "m2m:cin" : {
+      "rn" : "cin_786107706",
+      "ty" : 4,
+      "ri" : "/Room1/cin-786107706",
+      "pi" : "/Room1/cnt-696539090",
+      "ct" : "20201118T173626",
+      "lt" : "20201118T173626",
+      "st" : 0,
+      "cnf" : "message",
+      "cs" : 1,
+      "con" : "0"
+   }
+}
+,
+ to=admin:admin,
+ from=/in-cse,
+ contentType=application/json;charset=ISO-8859-1,
+]
+[2020-11-25 17:34:23,618 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-11-25 17:34:23,619 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/Room1/Room1/Heating1/DATA/la,
+ ]
+[2020-11-25 17:34:23,625 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/json
+[2020-11-25 17:34:23,626 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/json
+[2020-11-25 17:34:23,633 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: text/plain, application/json, application/*+json, */*
+[2020-11-25 17:34:23,642 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/Room1/Room1/Heating1/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:23,643 INFO] - org.eclipse.om2m.core.router.Router 
+Request targeting another CSE, forwarding to Redirector: /Room1/Room1/Heating1/DATA/la
+[2020-11-25 17:34:23,655 INFO] - org.eclipse.om2m.core.redirector.Redirector 
+RemoteCSE found: /Room1
+[2020-11-25 17:34:23,661 INFO] - org.eclipse.om2m.core.comm.RestClient 
+the requestIndication RC: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8181/~/Room1/Room1/Heating1/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:23,662 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Sending request: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8181/~/Room1/Room1/Heating1/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:23,669 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Request to be send: GET http://127.0.0.1:8181/~/Room1/Room1/Heating1/DATA/la HTTP/1.1
+[2020-11-25 17:34:23,679 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Headers:
+Accept: application/json
+X-M2M-Origin: admin:admin
+Content-Type: application/json
+
+[2020-11-25 17:34:23,743 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Http Client response: ResponsePrimitive [responseStatusCode=2000,
+ content={
+   "m2m:cin" : {
+      "rn" : "cin_648732524",
+      "ty" : 4,
+      "ri" : "/Room1/cin-648732524",
+      "pi" : "/Room1/cnt-17108296",
+      "ct" : "20201118T173716",
+      "lt" : "20201118T173716",
+      "st" : 0,
+      "cnf" : "message",
+      "cs" : 1,
+      "con" : "0"
+   }
+}
+,
+ to=admin:admin,
+ from=/in-cse,
+ contentType=application/json;charset=ISO-8859-1,
+]
+[2020-11-25 17:34:23,743 INFO] - org.eclipse.om2m.core.comm.RestClient 
+ResponsePrimitive [responseStatusCode=2000,
+ content={
+   "m2m:cin" : {
+      "rn" : "cin_648732524",
+      "ty" : 4,
+      "ri" : "/Room1/cin-648732524",
+      "pi" : "/Room1/cnt-17108296",
+      "ct" : "20201118T173716",
+      "lt" : "20201118T173716",
+      "st" : 0,
+      "cnf" : "message",
+      "cs" : 1,
+      "con" : "0"
+   }
+}
+,
+ to=admin:admin,
+ from=/in-cse,
+ contentType=application/json;charset=ISO-8859-1,
+]
+[2020-11-25 17:34:23,814 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-11-25 17:34:23,816 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/Room2/Room2/Temperature/DATA/la,
+ ]
+[2020-11-25 17:34:23,822 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/json
+[2020-11-25 17:34:23,826 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/json
+[2020-11-25 17:34:23,827 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: text/plain, application/json, application/*+json, */*
+[2020-11-25 17:34:23,830 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/Room2/Room2/Temperature/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:23,842 INFO] - org.eclipse.om2m.core.router.Router 
+Request targeting another CSE, forwarding to Redirector: /Room2/Room2/Temperature/DATA/la
+[2020-11-25 17:34:23,846 INFO] - org.eclipse.om2m.core.redirector.Redirector 
+RemoteCSE found: /Room2
+[2020-11-25 17:34:23,847 INFO] - org.eclipse.om2m.core.comm.RestClient 
+the requestIndication RC: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8282/~/Room2/Room2/Temperature/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:23,848 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Sending request: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8282/~/Room2/Room2/Temperature/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:23,850 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Request to be send: GET http://127.0.0.1:8282/~/Room2/Room2/Temperature/DATA/la HTTP/1.1
+[2020-11-25 17:34:23,851 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Headers:
+Accept: application/json
+X-M2M-Origin: admin:admin
+Content-Type: application/json
+
+[2020-11-25 17:34:23,896 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Http Client response: ResponsePrimitive [responseStatusCode=2000,
+ content={
+   "m2m:cin" : {
+      "rn" : "cin_647514500",
+      "ty" : 4,
+      "ri" : "/Room2/cin-647514500",
+      "pi" : "/Room2/cnt-178933887",
+      "ct" : "20201118T180958",
+      "lt" : "20201118T180958",
+      "st" : 0,
+      "cnf" : "message",
+      "cs" : 1,
+      "con" : "0"
+   }
+}
+,
+ to=admin:admin,
+ from=/in-cse,
+ contentType=application/json;charset=ISO-8859-1,
+]
+[2020-11-25 17:34:23,897 INFO] - org.eclipse.om2m.core.comm.RestClient 
+ResponsePrimitive [responseStatusCode=2000,
+ content={
+   "m2m:cin" : {
+      "rn" : "cin_647514500",
+      "ty" : 4,
+      "ri" : "/Room2/cin-647514500",
+      "pi" : "/Room2/cnt-178933887",
+      "ct" : "20201118T180958",
+      "lt" : "20201118T180958",
+      "st" : 0,
+      "cnf" : "message",
+      "cs" : 1,
+      "con" : "0"
+   }
+}
+,
+ to=admin:admin,
+ from=/in-cse,
+ contentType=application/json;charset=ISO-8859-1,
+]
+[2020-11-25 17:34:23,961 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-11-25 17:34:23,962 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/Room2/Room2/Presence/DATA/la,
+ ]
+[2020-11-25 17:34:23,969 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/json
+[2020-11-25 17:34:23,972 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/json
+[2020-11-25 17:34:23,973 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: text/plain, application/json, application/*+json, */*
+[2020-11-25 17:34:23,975 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/Room2/Room2/Presence/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:23,976 INFO] - org.eclipse.om2m.core.router.Router 
+Request targeting another CSE, forwarding to Redirector: /Room2/Room2/Presence/DATA/la
+[2020-11-25 17:34:23,980 INFO] - org.eclipse.om2m.core.redirector.Redirector 
+RemoteCSE found: /Room2
+[2020-11-25 17:34:23,995 INFO] - org.eclipse.om2m.core.comm.RestClient 
+the requestIndication RC: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8282/~/Room2/Room2/Presence/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:23,997 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Sending request: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8282/~/Room2/Room2/Presence/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:24,005 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Request to be send: GET http://127.0.0.1:8282/~/Room2/Room2/Presence/DATA/la HTTP/1.1
+[2020-11-25 17:34:24,008 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Headers:
+Accept: application/json
+X-M2M-Origin: admin:admin
+Content-Type: application/json
+
+[2020-11-25 17:34:24,055 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Http Client response: ResponsePrimitive [responseStatusCode=2000,
+ content={
+   "m2m:cin" : {
+      "rn" : "cin_776528820",
+      "ty" : 4,
+      "ri" : "/Room2/cin-776528820",
+      "pi" : "/Room2/cnt-160033169",
+      "ct" : "20201118T180951",
+      "lt" : "20201118T180951",
+      "st" : 0,
+      "cnf" : "message",
+      "cs" : 1,
+      "con" : "0"
+   }
+}
+,
+ to=admin:admin,
+ from=/in-cse,
+ contentType=application/json;charset=ISO-8859-1,
+]
+[2020-11-25 17:34:24,055 INFO] - org.eclipse.om2m.core.comm.RestClient 
+ResponsePrimitive [responseStatusCode=2000,
+ content={
+   "m2m:cin" : {
+      "rn" : "cin_776528820",
+      "ty" : 4,
+      "ri" : "/Room2/cin-776528820",
+      "pi" : "/Room2/cnt-160033169",
+      "ct" : "20201118T180951",
+      "lt" : "20201118T180951",
+      "st" : 0,
+      "cnf" : "message",
+      "cs" : 1,
+      "con" : "0"
+   }
+}
+,
+ to=admin:admin,
+ from=/in-cse,
+ contentType=application/json;charset=ISO-8859-1,
+]
+[2020-11-25 17:34:24,123 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-11-25 17:34:24,123 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/Room2/Room2/Light1/DATA/la,
+ ]
+[2020-11-25 17:34:24,124 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/json
+[2020-11-25 17:34:24,126 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/json
+[2020-11-25 17:34:24,128 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: text/plain, application/json, application/*+json, */*
+[2020-11-25 17:34:24,129 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/Room2/Room2/Light1/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:24,140 INFO] - org.eclipse.om2m.core.router.Router 
+Request targeting another CSE, forwarding to Redirector: /Room2/Room2/Light1/DATA/la
+[2020-11-25 17:34:24,144 INFO] - org.eclipse.om2m.core.redirector.Redirector 
+RemoteCSE found: /Room2
+[2020-11-25 17:34:24,144 INFO] - org.eclipse.om2m.core.comm.RestClient 
+the requestIndication RC: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8282/~/Room2/Room2/Light1/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:24,145 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Sending request: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8282/~/Room2/Room2/Light1/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:24,147 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Request to be send: GET http://127.0.0.1:8282/~/Room2/Room2/Light1/DATA/la HTTP/1.1
+[2020-11-25 17:34:24,161 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Headers:
+Accept: application/json
+X-M2M-Origin: admin:admin
+Content-Type: application/json
+
+[2020-11-25 17:34:24,187 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Http Client response: ResponsePrimitive [responseStatusCode=2000,
+ content={
+   "m2m:cin" : {
+      "rn" : "cin_630299784",
+      "ty" : 4,
+      "ri" : "/Room2/cin-630299784",
+      "pi" : "/Room2/cnt-227797752",
+      "ct" : "20201118T180855",
+      "lt" : "20201118T180855",
+      "st" : 0,
+      "cnf" : "message",
+      "cs" : 1,
+      "con" : "0"
+   }
+}
+,
+ to=admin:admin,
+ from=/in-cse,
+ contentType=application/json;charset=ISO-8859-1,
+]
+[2020-11-25 17:34:24,189 INFO] - org.eclipse.om2m.core.comm.RestClient 
+ResponsePrimitive [responseStatusCode=2000,
+ content={
+   "m2m:cin" : {
+      "rn" : "cin_630299784",
+      "ty" : 4,
+      "ri" : "/Room2/cin-630299784",
+      "pi" : "/Room2/cnt-227797752",
+      "ct" : "20201118T180855",
+      "lt" : "20201118T180855",
+      "st" : 0,
+      "cnf" : "message",
+      "cs" : 1,
+      "con" : "0"
+   }
+}
+,
+ to=admin:admin,
+ from=/in-cse,
+ contentType=application/json;charset=ISO-8859-1,
+]
+[2020-11-25 17:34:24,214 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-11-25 17:34:24,227 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/Room2/Room2/Light2/DATA/la,
+ ]
+[2020-11-25 17:34:24,228 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/json
+[2020-11-25 17:34:24,229 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/json
+[2020-11-25 17:34:24,230 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: text/plain, application/json, application/*+json, */*
+[2020-11-25 17:34:24,231 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/Room2/Room2/Light2/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:24,233 INFO] - org.eclipse.om2m.core.router.Router 
+Request targeting another CSE, forwarding to Redirector: /Room2/Room2/Light2/DATA/la
+[2020-11-25 17:34:24,237 INFO] - org.eclipse.om2m.core.redirector.Redirector 
+RemoteCSE found: /Room2
+[2020-11-25 17:34:24,247 INFO] - org.eclipse.om2m.core.comm.RestClient 
+the requestIndication RC: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8282/~/Room2/Room2/Light2/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:24,249 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Sending request: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8282/~/Room2/Room2/Light2/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:24,252 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Request to be send: GET http://127.0.0.1:8282/~/Room2/Room2/Light2/DATA/la HTTP/1.1
+[2020-11-25 17:34:24,253 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Headers:
+Accept: application/json
+X-M2M-Origin: admin:admin
+Content-Type: application/json
+
+[2020-11-25 17:34:24,277 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Http Client response: ResponsePrimitive [responseStatusCode=2000,
+ content={
+   "m2m:cin" : {
+      "rn" : "cin_683746240",
+      "ty" : 4,
+      "ri" : "/Room2/cin-683746240",
+      "pi" : "/Room2/cnt-142475792",
+      "ct" : "20201118T180906",
+      "lt" : "20201118T180906",
+      "st" : 0,
+      "cnf" : "message",
+      "cs" : 1,
+      "con" : "0"
+   }
+}
+,
+ to=admin:admin,
+ from=/in-cse,
+ contentType=application/json;charset=ISO-8859-1,
+]
+[2020-11-25 17:34:24,284 INFO] - org.eclipse.om2m.core.comm.RestClient 
+ResponsePrimitive [responseStatusCode=2000,
+ content={
+   "m2m:cin" : {
+      "rn" : "cin_683746240",
+      "ty" : 4,
+      "ri" : "/Room2/cin-683746240",
+      "pi" : "/Room2/cnt-142475792",
+      "ct" : "20201118T180906",
+      "lt" : "20201118T180906",
+      "st" : 0,
+      "cnf" : "message",
+      "cs" : 1,
+      "con" : "0"
+   }
+}
+,
+ to=admin:admin,
+ from=/in-cse,
+ contentType=application/json;charset=ISO-8859-1,
+]
+[2020-11-25 17:34:24,303 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-11-25 17:34:24,315 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/Room2/Room2/Light3/DATA/la,
+ ]
+[2020-11-25 17:34:24,318 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/json
+[2020-11-25 17:34:24,319 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/json
+[2020-11-25 17:34:24,320 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: text/plain, application/json, application/*+json, */*
+[2020-11-25 17:34:24,321 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/Room2/Room2/Light3/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:24,322 INFO] - org.eclipse.om2m.core.router.Router 
+Request targeting another CSE, forwarding to Redirector: /Room2/Room2/Light3/DATA/la
+[2020-11-25 17:34:24,326 INFO] - org.eclipse.om2m.core.redirector.Redirector 
+RemoteCSE found: /Room2
+[2020-11-25 17:34:24,339 INFO] - org.eclipse.om2m.core.comm.RestClient 
+the requestIndication RC: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8282/~/Room2/Room2/Light3/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:24,341 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Sending request: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8282/~/Room2/Room2/Light3/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:24,343 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Request to be send: GET http://127.0.0.1:8282/~/Room2/Room2/Light3/DATA/la HTTP/1.1
+[2020-11-25 17:34:24,343 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Headers:
+Accept: application/json
+X-M2M-Origin: admin:admin
+Content-Type: application/json
+
+[2020-11-25 17:34:24,366 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Http Client response: ResponsePrimitive [responseStatusCode=2000,
+ content={
+   "m2m:cin" : {
+      "rn" : "cin_880814975",
+      "ty" : 4,
+      "ri" : "/Room2/cin-880814975",
+      "pi" : "/Room2/cnt-328714560",
+      "ct" : "20201118T180910",
+      "lt" : "20201118T180910",
+      "st" : 0,
+      "cnf" : "message",
+      "cs" : 1,
+      "con" : "0"
+   }
+}
+,
+ to=admin:admin,
+ from=/in-cse,
+ contentType=application/json;charset=ISO-8859-1,
+]
+[2020-11-25 17:34:24,370 INFO] - org.eclipse.om2m.core.comm.RestClient 
+ResponsePrimitive [responseStatusCode=2000,
+ content={
+   "m2m:cin" : {
+      "rn" : "cin_880814975",
+      "ty" : 4,
+      "ri" : "/Room2/cin-880814975",
+      "pi" : "/Room2/cnt-328714560",
+      "ct" : "20201118T180910",
+      "lt" : "20201118T180910",
+      "st" : 0,
+      "cnf" : "message",
+      "cs" : 1,
+      "con" : "0"
+   }
+}
+,
+ to=admin:admin,
+ from=/in-cse,
+ contentType=application/json;charset=ISO-8859-1,
+]
+[2020-11-25 17:34:24,430 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-11-25 17:34:24,439 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/Room2/Room2/Door1/DATA/la,
+ ]
+[2020-11-25 17:34:24,443 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/json
+[2020-11-25 17:34:24,444 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/json
+[2020-11-25 17:34:24,446 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: text/plain, application/json, application/*+json, */*
+[2020-11-25 17:34:24,447 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/Room2/Room2/Door1/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:24,449 INFO] - org.eclipse.om2m.core.router.Router 
+Request targeting another CSE, forwarding to Redirector: /Room2/Room2/Door1/DATA/la
+[2020-11-25 17:34:24,455 INFO] - org.eclipse.om2m.core.redirector.Redirector 
+RemoteCSE found: /Room2
+[2020-11-25 17:34:24,470 INFO] - org.eclipse.om2m.core.comm.RestClient 
+the requestIndication RC: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8282/~/Room2/Room2/Door1/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:24,472 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Sending request: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8282/~/Room2/Room2/Door1/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:24,474 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Request to be send: GET http://127.0.0.1:8282/~/Room2/Room2/Door1/DATA/la HTTP/1.1
+[2020-11-25 17:34:24,474 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Headers:
+Accept: application/json
+X-M2M-Origin: admin:admin
+Content-Type: application/json
+
+[2020-11-25 17:34:24,500 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Http Client response: ResponsePrimitive [responseStatusCode=2000,
+ content={
+   "m2m:cin" : {
+      "rn" : "cin_94865516",
+      "ty" : 4,
+      "ri" : "/Room2/cin-94865516",
+      "pi" : "/Room2/cnt-879599679",
+      "ct" : "20201118T180937",
+      "lt" : "20201118T180937",
+      "st" : 0,
+      "cnf" : "message",
+      "cs" : 1,
+      "con" : "0"
+   }
+}
+,
+ to=admin:admin,
+ from=/in-cse,
+ contentType=application/json;charset=ISO-8859-1,
+]
+[2020-11-25 17:34:24,507 INFO] - org.eclipse.om2m.core.comm.RestClient 
+ResponsePrimitive [responseStatusCode=2000,
+ content={
+   "m2m:cin" : {
+      "rn" : "cin_94865516",
+      "ty" : 4,
+      "ri" : "/Room2/cin-94865516",
+      "pi" : "/Room2/cnt-879599679",
+      "ct" : "20201118T180937",
+      "lt" : "20201118T180937",
+      "st" : 0,
+      "cnf" : "message",
+      "cs" : 1,
+      "con" : "0"
+   }
+}
+,
+ to=admin:admin,
+ from=/in-cse,
+ contentType=application/json;charset=ISO-8859-1,
+]
+[2020-11-25 17:34:24,582 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-11-25 17:34:24,585 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/Room2/Room2/Window1/DATA/la,
+ ]
+[2020-11-25 17:34:24,586 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/json
+[2020-11-25 17:34:24,587 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/json
+[2020-11-25 17:34:24,588 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: text/plain, application/json, application/*+json, */*
+[2020-11-25 17:34:24,590 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/Room2/Room2/Window1/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:24,600 INFO] - org.eclipse.om2m.core.router.Router 
+Request targeting another CSE, forwarding to Redirector: /Room2/Room2/Window1/DATA/la
+[2020-11-25 17:34:24,608 INFO] - org.eclipse.om2m.core.redirector.Redirector 
+RemoteCSE found: /Room2
+[2020-11-25 17:34:24,608 INFO] - org.eclipse.om2m.core.comm.RestClient 
+the requestIndication RC: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8282/~/Room2/Room2/Window1/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:24,610 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Sending request: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8282/~/Room2/Room2/Window1/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:24,625 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Request to be send: GET http://127.0.0.1:8282/~/Room2/Room2/Window1/DATA/la HTTP/1.1
+[2020-11-25 17:34:24,625 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Headers:
+Accept: application/json
+X-M2M-Origin: admin:admin
+Content-Type: application/json
+
+[2020-11-25 17:34:24,663 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Http Client response: ResponsePrimitive [responseStatusCode=2000,
+ content={
+   "m2m:cin" : {
+      "rn" : "cin_608937352",
+      "ty" : 4,
+      "ri" : "/Room2/cin-608937352",
+      "pi" : "/Room2/cnt-672206720",
+      "ct" : "20201118T180930",
+      "lt" : "20201118T180930",
+      "st" : 0,
+      "cnf" : "message",
+      "cs" : 1,
+      "con" : "0"
+   }
+}
+,
+ to=admin:admin,
+ from=/in-cse,
+ contentType=application/json;charset=ISO-8859-1,
+]
+[2020-11-25 17:34:24,664 INFO] - org.eclipse.om2m.core.comm.RestClient 
+ResponsePrimitive [responseStatusCode=2000,
+ content={
+   "m2m:cin" : {
+      "rn" : "cin_608937352",
+      "ty" : 4,
+      "ri" : "/Room2/cin-608937352",
+      "pi" : "/Room2/cnt-672206720",
+      "ct" : "20201118T180930",
+      "lt" : "20201118T180930",
+      "st" : 0,
+      "cnf" : "message",
+      "cs" : 1,
+      "con" : "0"
+   }
+}
+,
+ to=admin:admin,
+ from=/in-cse,
+ contentType=application/json;charset=ISO-8859-1,
+]
+[2020-11-25 17:34:24,692 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-11-25 17:34:24,702 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/Room2/Room2/Window2/DATA/la,
+ ]
+[2020-11-25 17:34:24,702 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/json
+[2020-11-25 17:34:24,704 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/json
+[2020-11-25 17:34:24,705 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: text/plain, application/json, application/*+json, */*
+[2020-11-25 17:34:24,706 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/Room2/Room2/Window2/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:24,707 INFO] - org.eclipse.om2m.core.router.Router 
+Request targeting another CSE, forwarding to Redirector: /Room2/Room2/Window2/DATA/la
+[2020-11-25 17:34:24,710 INFO] - org.eclipse.om2m.core.redirector.Redirector 
+RemoteCSE found: /Room2
+[2020-11-25 17:34:24,723 INFO] - org.eclipse.om2m.core.comm.RestClient 
+the requestIndication RC: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8282/~/Room2/Room2/Window2/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:24,724 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Sending request: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8282/~/Room2/Room2/Window2/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:24,726 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Request to be send: GET http://127.0.0.1:8282/~/Room2/Room2/Window2/DATA/la HTTP/1.1
+[2020-11-25 17:34:24,726 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Headers:
+Accept: application/json
+X-M2M-Origin: admin:admin
+Content-Type: application/json
+
+[2020-11-25 17:34:24,751 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Http Client response: ResponsePrimitive [responseStatusCode=2000,
+ content={
+   "m2m:cin" : {
+      "rn" : "cin_434182182",
+      "ty" : 4,
+      "ri" : "/Room2/cin-434182182",
+      "pi" : "/Room2/cnt-490540000",
+      "ct" : "20201118T180933",
+      "lt" : "20201118T180933",
+      "st" : 0,
+      "cnf" : "message",
+      "cs" : 1,
+      "con" : "0"
+   }
+}
+,
+ to=admin:admin,
+ from=/in-cse,
+ contentType=application/json;charset=ISO-8859-1,
+]
+[2020-11-25 17:34:24,757 INFO] - org.eclipse.om2m.core.comm.RestClient 
+ResponsePrimitive [responseStatusCode=2000,
+ content={
+   "m2m:cin" : {
+      "rn" : "cin_434182182",
+      "ty" : 4,
+      "ri" : "/Room2/cin-434182182",
+      "pi" : "/Room2/cnt-490540000",
+      "ct" : "20201118T180933",
+      "lt" : "20201118T180933",
+      "st" : 0,
+      "cnf" : "message",
+      "cs" : 1,
+      "con" : "0"
+   }
+}
+,
+ to=admin:admin,
+ from=/in-cse,
+ contentType=application/json;charset=ISO-8859-1,
+]
+[2020-11-25 17:34:24,802 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-11-25 17:34:24,802 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/Room2/Room2/Heating1/DATA/la,
+ ]
+[2020-11-25 17:34:24,807 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/json
+[2020-11-25 17:34:24,807 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/json
+[2020-11-25 17:34:24,814 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: text/plain, application/json, application/*+json, */*
+[2020-11-25 17:34:24,816 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/Room2/Room2/Heating1/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:24,826 INFO] - org.eclipse.om2m.core.router.Router 
+Request targeting another CSE, forwarding to Redirector: /Room2/Room2/Heating1/DATA/la
+[2020-11-25 17:34:24,836 INFO] - org.eclipse.om2m.core.redirector.Redirector 
+RemoteCSE found: /Room2
+[2020-11-25 17:34:24,842 INFO] - org.eclipse.om2m.core.comm.RestClient 
+the requestIndication RC: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8282/~/Room2/Room2/Heating1/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:24,848 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Sending request: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8282/~/Room2/Room2/Heating1/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:24,850 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Request to be send: GET http://127.0.0.1:8282/~/Room2/Room2/Heating1/DATA/la HTTP/1.1
+[2020-11-25 17:34:24,860 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Headers:
+Accept: application/json
+X-M2M-Origin: admin:admin
+Content-Type: application/json
+
+[2020-11-25 17:34:24,881 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Http Client response: ResponsePrimitive [responseStatusCode=2000,
+ content={
+   "m2m:cin" : {
+      "rn" : "cin_953253116",
+      "ty" : 4,
+      "ri" : "/Room2/cin-953253116",
+      "pi" : "/Room2/cnt-543199463",
+      "ct" : "20201118T180944",
+      "lt" : "20201118T180944",
+      "st" : 0,
+      "cnf" : "message",
+      "cs" : 1,
+      "con" : "0"
+   }
+}
+,
+ to=admin:admin,
+ from=/in-cse,
+ contentType=application/json;charset=ISO-8859-1,
+]
+[2020-11-25 17:34:24,884 INFO] - org.eclipse.om2m.core.comm.RestClient 
+ResponsePrimitive [responseStatusCode=2000,
+ content={
+   "m2m:cin" : {
+      "rn" : "cin_953253116",
+      "ty" : 4,
+      "ri" : "/Room2/cin-953253116",
+      "pi" : "/Room2/cnt-543199463",
+      "ct" : "20201118T180944",
+      "lt" : "20201118T180944",
+      "st" : 0,
+      "cnf" : "message",
+      "cs" : 1,
+      "con" : "0"
+   }
+}
+,
+ to=admin:admin,
+ from=/in-cse,
+ contentType=application/json;charset=ISO-8859-1,
+]
+[2020-11-25 17:34:25,016 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-11-25 17:34:25,017 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/Room1/Room1/Temperature/DATA/la,
+ ]
+[2020-11-25 17:34:25,022 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/json
+[2020-11-25 17:34:25,028 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/json
+[2020-11-25 17:34:25,029 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: text/plain, application/json, application/*+json, */*
+[2020-11-25 17:34:25,030 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/Room1/Room1/Temperature/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:25,042 INFO] - org.eclipse.om2m.core.router.Router 
+Request targeting another CSE, forwarding to Redirector: /Room1/Room1/Temperature/DATA/la
+[2020-11-25 17:34:25,051 INFO] - org.eclipse.om2m.core.redirector.Redirector 
+RemoteCSE found: /Room1
+[2020-11-25 17:34:25,067 INFO] - org.eclipse.om2m.core.comm.RestClient 
+the requestIndication RC: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8181/~/Room1/Room1/Temperature/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:25,071 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Sending request: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8181/~/Room1/Room1/Temperature/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:25,074 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Request to be send: GET http://127.0.0.1:8181/~/Room1/Room1/Temperature/DATA/la HTTP/1.1
+[2020-11-25 17:34:25,085 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Headers:
+Accept: application/json
+X-M2M-Origin: admin:admin
+Content-Type: application/json
+
+[2020-11-25 17:34:25,141 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Http Client response: ResponsePrimitive [responseStatusCode=2000,
+ content={
+   "m2m:cin" : {
+      "rn" : "cin_813524480",
+      "ty" : 4,
+      "ri" : "/Room1/cin-813524480",
+      "pi" : "/Room1/cnt-721763740",
+      "ct" : "20201118T174109",
+      "lt" : "20201118T174109",
+      "st" : 0,
+      "cnf" : "message",
+      "cs" : 2,
+      "con" : "15"
+   }
+}
+,
+ to=admin:admin,
+ from=/in-cse,
+ contentType=application/json;charset=ISO-8859-1,
+]
+[2020-11-25 17:34:25,142 INFO] - org.eclipse.om2m.core.comm.RestClient 
+ResponsePrimitive [responseStatusCode=2000,
+ content={
+   "m2m:cin" : {
+      "rn" : "cin_813524480",
+      "ty" : 4,
+      "ri" : "/Room1/cin-813524480",
+      "pi" : "/Room1/cnt-721763740",
+      "ct" : "20201118T174109",
+      "lt" : "20201118T174109",
+      "st" : 0,
+      "cnf" : "message",
+      "cs" : 2,
+      "con" : "15"
+   }
+}
+,
+ to=admin:admin,
+ from=/in-cse,
+ contentType=application/json;charset=ISO-8859-1,
+]
+[2020-11-25 17:34:25,169 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-11-25 17:34:25,180 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/Room1/Room1/Presence/DATA/la,
+ ]
+[2020-11-25 17:34:25,180 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/json
+[2020-11-25 17:34:25,183 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/json
+[2020-11-25 17:34:25,184 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: text/plain, application/json, application/*+json, */*
+[2020-11-25 17:34:25,185 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/Room1/Room1/Presence/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:25,186 INFO] - org.eclipse.om2m.core.router.Router 
+Request targeting another CSE, forwarding to Redirector: /Room1/Room1/Presence/DATA/la
+[2020-11-25 17:34:25,189 INFO] - org.eclipse.om2m.core.redirector.Redirector 
+RemoteCSE found: /Room1
+[2020-11-25 17:34:25,203 INFO] - org.eclipse.om2m.core.comm.RestClient 
+the requestIndication RC: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8181/~/Room1/Room1/Presence/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:25,205 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Sending request: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8181/~/Room1/Room1/Presence/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:25,207 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Request to be send: GET http://127.0.0.1:8181/~/Room1/Room1/Presence/DATA/la HTTP/1.1
+[2020-11-25 17:34:25,207 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Headers:
+Accept: application/json
+X-M2M-Origin: admin:admin
+Content-Type: application/json
+
+[2020-11-25 17:34:25,257 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Http Client response: ResponsePrimitive [responseStatusCode=2000,
+ content={
+   "m2m:cin" : {
+      "rn" : "cin_686678094",
+      "ty" : 4,
+      "ri" : "/Room1/cin-686678094",
+      "pi" : "/Room1/cnt-997138804",
+      "ct" : "20201118T174056",
+      "lt" : "20201118T174056",
+      "st" : 0,
+      "cnf" : "message",
+      "cs" : 1,
+      "con" : "0"
+   }
+}
+,
+ to=admin:admin,
+ from=/in-cse,
+ contentType=application/json;charset=ISO-8859-1,
+]
+[2020-11-25 17:34:25,257 INFO] - org.eclipse.om2m.core.comm.RestClient 
+ResponsePrimitive [responseStatusCode=2000,
+ content={
+   "m2m:cin" : {
+      "rn" : "cin_686678094",
+      "ty" : 4,
+      "ri" : "/Room1/cin-686678094",
+      "pi" : "/Room1/cnt-997138804",
+      "ct" : "20201118T174056",
+      "lt" : "20201118T174056",
+      "st" : 0,
+      "cnf" : "message",
+      "cs" : 1,
+      "con" : "0"
+   }
+}
+,
+ to=admin:admin,
+ from=/in-cse,
+ contentType=application/json;charset=ISO-8859-1,
+]
+[2020-11-25 17:34:25,293 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-11-25 17:34:25,304 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/Room2/Room2/Temperature/DATA/la,
+ ]
+[2020-11-25 17:34:25,306 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/json
+[2020-11-25 17:34:25,307 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/json
+[2020-11-25 17:34:25,308 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: text/plain, application/json, application/*+json, */*
+[2020-11-25 17:34:25,309 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/Room2/Room2/Temperature/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:25,310 INFO] - org.eclipse.om2m.core.router.Router 
+Request targeting another CSE, forwarding to Redirector: /Room2/Room2/Temperature/DATA/la
+[2020-11-25 17:34:25,313 INFO] - org.eclipse.om2m.core.redirector.Redirector 
+RemoteCSE found: /Room2
+[2020-11-25 17:34:25,327 INFO] - org.eclipse.om2m.core.comm.RestClient 
+the requestIndication RC: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8282/~/Room2/Room2/Temperature/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:25,329 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Sending request: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8282/~/Room2/Room2/Temperature/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:25,330 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Request to be send: GET http://127.0.0.1:8282/~/Room2/Room2/Temperature/DATA/la HTTP/1.1
+[2020-11-25 17:34:25,331 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Headers:
+Accept: application/json
+X-M2M-Origin: admin:admin
+Content-Type: application/json
+
+[2020-11-25 17:34:25,354 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Http Client response: ResponsePrimitive [responseStatusCode=2000,
+ content={
+   "m2m:cin" : {
+      "rn" : "cin_647514500",
+      "ty" : 4,
+      "ri" : "/Room2/cin-647514500",
+      "pi" : "/Room2/cnt-178933887",
+      "ct" : "20201118T180958",
+      "lt" : "20201118T180958",
+      "st" : 0,
+      "cnf" : "message",
+      "cs" : 1,
+      "con" : "0"
+   }
+}
+,
+ to=admin:admin,
+ from=/in-cse,
+ contentType=application/json;charset=ISO-8859-1,
+]
+[2020-11-25 17:34:25,359 INFO] - org.eclipse.om2m.core.comm.RestClient 
+ResponsePrimitive [responseStatusCode=2000,
+ content={
+   "m2m:cin" : {
+      "rn" : "cin_647514500",
+      "ty" : 4,
+      "ri" : "/Room2/cin-647514500",
+      "pi" : "/Room2/cnt-178933887",
+      "ct" : "20201118T180958",
+      "lt" : "20201118T180958",
+      "st" : 0,
+      "cnf" : "message",
+      "cs" : 1,
+      "con" : "0"
+   }
+}
+,
+ to=admin:admin,
+ from=/in-cse,
+ contentType=application/json;charset=ISO-8859-1,
+]
+[2020-11-25 17:34:25,374 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-11-25 17:34:25,386 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/Room2/Room2/Presence/DATA/la,
+ ]
+[2020-11-25 17:34:25,390 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/json
+[2020-11-25 17:34:25,392 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/json
+[2020-11-25 17:34:25,393 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: text/plain, application/json, application/*+json, */*
+[2020-11-25 17:34:25,395 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/Room2/Room2/Presence/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:25,396 INFO] - org.eclipse.om2m.core.router.Router 
+Request targeting another CSE, forwarding to Redirector: /Room2/Room2/Presence/DATA/la
+[2020-11-25 17:34:25,411 INFO] - org.eclipse.om2m.core.redirector.Redirector 
+RemoteCSE found: /Room2
+[2020-11-25 17:34:25,412 INFO] - org.eclipse.om2m.core.comm.RestClient 
+the requestIndication RC: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8282/~/Room2/Room2/Presence/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:25,413 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Sending request: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8282/~/Room2/Room2/Presence/DATA/la,
+ from=admin:admin,
+ returnContentType=application/json,
+ requestContentType=application/json,
+ queryStrings={}]
+[2020-11-25 17:34:25,415 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Request to be send: GET http://127.0.0.1:8282/~/Room2/Room2/Presence/DATA/la HTTP/1.1
+[2020-11-25 17:34:25,416 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Headers:
+Accept: application/json
+X-M2M-Origin: admin:admin
+Content-Type: application/json
+
+[2020-11-25 17:34:25,444 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Http Client response: ResponsePrimitive [responseStatusCode=2000,
+ content={
+   "m2m:cin" : {
+      "rn" : "cin_776528820",
+      "ty" : 4,
+      "ri" : "/Room2/cin-776528820",
+      "pi" : "/Room2/cnt-160033169",
+      "ct" : "20201118T180951",
+      "lt" : "20201118T180951",
+      "st" : 0,
+      "cnf" : "message",
+      "cs" : 1,
+      "con" : "0"
+   }
+}
+,
+ to=admin:admin,
+ from=/in-cse,
+ contentType=application/json;charset=ISO-8859-1,
+]
+[2020-11-25 17:34:25,446 INFO] - org.eclipse.om2m.core.comm.RestClient 
+ResponsePrimitive [responseStatusCode=2000,
+ content={
+   "m2m:cin" : {
+      "rn" : "cin_776528820",
+      "ty" : 4,
+      "ri" : "/Room2/cin-776528820",
+      "pi" : "/Room2/cnt-160033169",
+      "ct" : "20201118T180951",
+      "lt" : "20201118T180951",
+      "st" : 0,
+      "cnf" : "message",
+      "cs" : 1,
+      "con" : "0"
+   }
+}
+,
+ to=admin:admin,
+ from=/in-cse,
+ contentType=application/json;charset=ISO-8859-1,
+]
+[2020-11-25 17:40:11,040 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-11-25 17:40:11,043 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=,
+ ]
+[2020-11-25 17:40:11,075 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+[2020-11-25 17:40:11,114 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=,
+ returnContentType=application/xml,
+ requestContentType=application/xml,
+ queryStrings={}]
+[2020-11-25 17:40:11,133 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: 
+[2020-11-25 17:40:11,139 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [CSEBaseController]
+[2020-11-25 17:40:11,144 INFO] - org.eclipse.om2m.core.router.Router 
+OM2M exception caught in Router: Unknown or unauthorized originator
+[2020-11-25 17:40:11,151 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [responseStatusCode=4103,
+ content=Unknown or unauthorized originator,
+ from=/in-cse,
+ contentType=text/plain,
+]
+[2020-11-25 17:40:11,649 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-11-25 17:40:11,650 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=favicon.ico,
+ ]
+[2020-11-25 17:40:11,660 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: image/avif,image/webp,image/apng,image/*,*/*;q=0.8
+[2020-11-25 17:40:11,662 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=favicon.ico,
+ returnContentType=application/xml,
+ requestContentType=application/xml,
+ queryStrings={}]
+[2020-11-25 17:40:11,663 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: favicon.ico
+[2020-11-25 17:40:11,664 INFO] - org.eclipse.om2m.core.router.Router 
+OM2M exception caught in Router: Malformed URI
+[2020-11-25 17:40:11,664 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [responseStatusCode=4000,
+ content=Malformed URI,
+ from=/in-cse,
+ contentType=text/plain,
+]
+[2020-11-25 17:40:17,440 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-11-25 17:40:17,464 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=favicon.ico,
+ ]
+[2020-11-25 17:40:17,471 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: image/avif,image/webp,image/apng,image/*,*/*;q=0.8
+[2020-11-25 17:40:17,484 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=favicon.ico,
+ returnContentType=application/xml,
+ requestContentType=application/xml,
+ queryStrings={}]
+[2020-11-25 17:40:17,489 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: favicon.ico
+[2020-11-25 17:40:17,522 INFO] - org.eclipse.om2m.core.router.Router 
+OM2M exception caught in Router: Malformed URI
+[2020-11-25 17:40:17,533 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [responseStatusCode=4000,
+ content=Malformed URI,
+ from=/in-cse,
+ contentType=text/plain,
+]
+[2020-11-25 17:40:22,588 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-11-25 17:40:22,593 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/in-cse,
+ resultContent=5,
+ ]
+[2020-11-25 17:40:22,594 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: application/xml
+[2020-11-25 17:40:22,595 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/in-cse,
+ from=admin:admin,
+ resultContent=5,
+ returnContentType=application/xml,
+ requestContentType=application/xml,
+ queryStrings={rcn=[5]}]
+[2020-11-25 17:40:22,601 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse
+[2020-11-25 17:40:22,602 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [CSEBaseController]
+[2020-11-25 17:40:22,675 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [responseStatusCode=2000,
+ content=<?xml version="1.0" encoding="UTF-8"?>
+<m2m:cb xmlns:m2m="http://www.onem2m.org/xml/protocols" rn="GEI">
+   <ty>5</ty>
+   <ri>/in-cse</ri>
+   <ct>20201118T164852</ct>
+   <lt>20201118T164852</lt>
+   <acpi>/in-cse/acp-2003268</acpi>
+   <cst>1</cst>
+   <csi>in-cse</csi>
+   <srt>1 2 3 4 5 9 14 15 16 17 23</srt>
+   <poa>http://127.0.0.1:8080/</poa>
+   <ch rn="acp_admin" ty="1">/in-cse/acp-2003268</ch>
+   <ch rn="acpae-225181188" ty="1">/in-cse/acp-806627632</ch>
+   <ch rn="acpae-722177833" ty="1">/in-cse/acp-141546332</ch>
+   <ch rn="Alarme" ty="2">/in-cse/CAE225181188</ch>
+   <ch rn="OutsideTemperature" ty="2">/in-cse/CAE722177833</ch>
+   <ch rn="Room2" ty="16">/in-cse/csr-278857096</ch>
+   <ch rn="Room1" ty="16">/in-cse/csr-738774906</ch>
+</m2m:cb>
+,
+ to=admin:admin,
+ from=/in-cse,
+ contentType=application/xml,
+]
+[2020-11-25 17:40:24,843 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-11-25 17:40:24,844 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/in-cse/csr-738774906,
+ resultContent=5,
+ ]
+[2020-11-25 17:40:24,849 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: application/xml
+[2020-11-25 17:40:24,850 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/in-cse/csr-738774906,
+ from=admin:admin,
+ resultContent=5,
+ returnContentType=application/xml,
+ requestContentType=application/xml,
+ queryStrings={rcn=[5]}]
+[2020-11-25 17:40:24,857 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: /in-cse/csr-738774906
+[2020-11-25 17:40:24,859 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [RemoteCSEController]
+[2020-11-25 17:40:24,892 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [responseStatusCode=2000,
+ content=<?xml version="1.0" encoding="UTF-8"?>
+<m2m:csr xmlns:m2m="http://www.onem2m.org/xml/protocols" rn="Room1">
+   <ty>16</ty>
+   <ri>/in-cse/csr-738774906</ri>
+   <pi>/in-cse</pi>
+   <ct>20201118T164855</ct>
+   <lt>20201118T164855</lt>
+   <acpi>/in-cse/acp-2003268</acpi>
+   <poa>http://127.0.0.1:8181/</poa>
+   <cb>//om2m.org/Room1</cb>
+   <csi>/Room1</csi>
+   <rr>true</rr>
+</m2m:csr>
+,
+ to=admin:admin,
+ from=/in-cse,
+ contentType=application/xml,
+]
+[2020-11-25 17:40:26,475 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-11-25 17:40:26,476 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=/Room1,
+ resultContent=5,
+ ]
+[2020-11-25 17:40:26,481 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: application/xml
+[2020-11-25 17:40:26,482 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=/Room1,
+ from=admin:admin,
+ resultContent=5,
+ returnContentType=application/xml,
+ requestContentType=application/xml,
+ queryStrings={rcn=[5]}]
+[2020-11-25 17:40:26,488 INFO] - org.eclipse.om2m.core.router.Router 
+Request targeting another CSE, forwarding to Redirector: /Room1
+[2020-11-25 17:40:26,492 INFO] - org.eclipse.om2m.core.redirector.Redirector 
+RemoteCSE found: /Room1
+[2020-11-25 17:40:26,505 INFO] - org.eclipse.om2m.core.comm.RestClient 
+the requestIndication RC: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8181/~/Room1,
+ from=admin:admin,
+ resultContent=5,
+ returnContentType=application/xml,
+ requestContentType=application/xml,
+ queryStrings={rcn=[5]}]
+[2020-11-25 17:40:26,506 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Sending request: RequestPrimitive [operation=2,
+ to=http://127.0.0.1:8181/~/Room1,
+ from=admin:admin,
+ resultContent=5,
+ returnContentType=application/xml,
+ requestContentType=application/xml,
+ queryStrings={rcn=[5]}]
+[2020-11-25 17:40:26,508 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Query string generated: ?rcn=5
+[2020-11-25 17:40:26,508 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Request to be send: GET http://127.0.0.1:8181/~/Room1?rcn=5 HTTP/1.1
+[2020-11-25 17:40:26,509 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Headers:
+Accept: application/xml
+X-M2M-Origin: admin:admin
+Content-Type: application/xml
+
+[2020-11-25 17:40:26,616 INFO] - org.eclipse.om2m.binding.http.RestHttpClient 
+Http Client response: ResponsePrimitive [responseStatusCode=2000,
+ content=<?xml version="1.0" encoding="UTF-8"?>
+<m2m:cb xmlns:m2m="http://www.onem2m.org/xml/protocols" rn="Room1">
+   <ty>5</ty>
+   <ri>/Room1</ri>
+   <ct>20201118T164855</ct>
+   <lt>20201118T164855</lt>
+   <acpi>/Room1/acp-935165343</acpi>
+   <cst>1</cst>
+   <csi>Room1</csi>
+   <srt>1 2 3 4 5 9 14 15 16 17 23</srt>
+   <poa>http://127.0.0.1:8181/</poa>
+   <ch rn="acp_admin" ty="1">/Room1/acp-935165343</ch>
+   <ch rn="acpae-793969299" ty="1">/Room1/acp-242355650</ch>
+   <ch rn="acpae-816443357" ty="1">/Room1/acp-820500705</ch>
+   <ch rn="acpae-590743708" ty="1">/Room1/acp-540811394</ch>
+   <ch rn="acpae-691625834" ty="1">/Room1/acp-285358485</ch>
+   <ch rn="acpae-23890819" ty="1">/Room1/acp-5544702</ch>
+   <ch rn="acpae-540989340" ty="1">/Room1/acp-247144970</ch>
+   <ch rn="acpae-935063483" ty="1">/Room1/acp-860679976</ch>
+   <ch rn="acpae-406362722" ty="1">/Room1/acp-688258157</ch>
+   <ch rn="acpae-323103155" ty="1">/Room1/acp-499703184</ch>
+   <ch rn="Light1" ty="2">/Room1/CAE793969299</ch>
+   <ch rn="Light2" ty="2">/Room1/CAE816443357</ch>
+   <ch rn="Window1" ty="2">/Room1/CAE590743708</ch>
+   <ch rn="Window2" ty="2">/Room1/CAE691625834</ch>
+   <ch rn="Heating1" ty="2">/Room1/CAE23890819</ch>
+   <ch rn="Door1" ty="2">/Room1/CAE540989340</ch>
+   <ch rn="Door2" ty="2">/Room1/CAE935063483</ch>
+   <ch rn="Temperature" ty="2">/Room1/CAE406362722</ch>
+   <ch rn="Presence" ty="2">/Room1/CAE323103155</ch>
+   <ch rn="GEI" ty="16">/Room1/csr-860653791</ch>
+</m2m:cb>
+
+,
+ to=admin:admin,
+ from=/in-cse,
+ contentType=application/xml;charset=ISO-8859-1,
+]
+[2020-11-25 17:40:26,627 INFO] - org.eclipse.om2m.core.comm.RestClient 
+ResponsePrimitive [responseStatusCode=2000,
+ content=<?xml version="1.0" encoding="UTF-8"?>
+<m2m:cb xmlns:m2m="http://www.onem2m.org/xml/protocols" rn="Room1">
+   <ty>5</ty>
+   <ri>/Room1</ri>
+   <ct>20201118T164855</ct>
+   <lt>20201118T164855</lt>
+   <acpi>/Room1/acp-935165343</acpi>
+   <cst>1</cst>
+   <csi>Room1</csi>
+   <srt>1 2 3 4 5 9 14 15 16 17 23</srt>
+   <poa>http://127.0.0.1:8181/</poa>
+   <ch rn="acp_admin" ty="1">/Room1/acp-935165343</ch>
+   <ch rn="acpae-793969299" ty="1">/Room1/acp-242355650</ch>
+   <ch rn="acpae-816443357" ty="1">/Room1/acp-820500705</ch>
+   <ch rn="acpae-590743708" ty="1">/Room1/acp-540811394</ch>
+   <ch rn="acpae-691625834" ty="1">/Room1/acp-285358485</ch>
+   <ch rn="acpae-23890819" ty="1">/Room1/acp-5544702</ch>
+   <ch rn="acpae-540989340" ty="1">/Room1/acp-247144970</ch>
+   <ch rn="acpae-935063483" ty="1">/Room1/acp-860679976</ch>
+   <ch rn="acpae-406362722" ty="1">/Room1/acp-688258157</ch>
+   <ch rn="acpae-323103155" ty="1">/Room1/acp-499703184</ch>
+   <ch rn="Light1" ty="2">/Room1/CAE793969299</ch>
+   <ch rn="Light2" ty="2">/Room1/CAE816443357</ch>
+   <ch rn="Window1" ty="2">/Room1/CAE590743708</ch>
+   <ch rn="Window2" ty="2">/Room1/CAE691625834</ch>
+   <ch rn="Heating1" ty="2">/Room1/CAE23890819</ch>
+   <ch rn="Door1" ty="2">/Room1/CAE540989340</ch>
+   <ch rn="Door2" ty="2">/Room1/CAE935063483</ch>
+   <ch rn="Temperature" ty="2">/Room1/CAE406362722</ch>
+   <ch rn="Presence" ty="2">/Room1/CAE323103155</ch>
+   <ch rn="GEI" ty="16">/Room1/csr-860653791</ch>
+</m2m:cb>
+
+,
+ to=admin:admin,
+ from=/in-cse,
+ contentType=application/xml;charset=ISO-8859-1,
+]
