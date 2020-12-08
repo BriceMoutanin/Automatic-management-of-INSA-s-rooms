@@ -1,6 +1,7 @@
 package fr.insa.soa.classroomManagement.ressources;
 import fr.insa.soa.classroomManagement.model.*;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -25,6 +26,7 @@ public class ClassroomResource {
 	String url="";
 
 	// Recuperer les noms des salles à partir des ports
+	@CrossOrigin(origins = "*")
 	@GetMapping("/rooms")
 	static public String[][] getAllRooms(){
 		String[][] result=new String[ports.length][2];
@@ -53,6 +55,7 @@ public class ClassroomResource {
 
 	//Depuis la salle donnée (port) renvoie tous les paths des sensors d'un type donné séparé par des espaces
 	//Par exemple /8181/light renvoie "Room1/Room1/light1 Room1/Room1/light2"
+	@CrossOrigin(origins = "*")
 	@GetMapping("/{port}/{sensorType}")
 	public String getPathBySensorType(@PathVariable("port") String port, @PathVariable("sensorType") String type){
 		//URL de recherche de path par label
@@ -73,6 +76,7 @@ public class ClassroomResource {
 
 	//Permet d'obtenir toutes les infos d'une classe donnée (sous forme de Classroom) à partir de son nom
 	//Exemple : /Room1/info
+	@CrossOrigin(origins = "*")
 	@GetMapping("/{room}/info")
 	public Classroom getClassroomInfo(@PathVariable String room){
 		//Recherche du port associé au nom de la salle donnée en argument
@@ -188,12 +192,14 @@ public class ClassroomResource {
 	}*/
 
 	//Recupere les infos de TOUTES les salles
+	@CrossOrigin(origins = "*")
 	@GetMapping("/classrooms/info")
-	public ArrayList<Classroom> getAllClassroomInfo(){
+	public ListClassroom getAllClassroomInfo(){
 		ArrayList<Classroom> classrooms= new ArrayList<Classroom>();
 		for(int i=0; i< ports.length;i++){
 			classrooms.add(getClassroomInfo(portRoomAssociation[i][1]));
 		}
-		return classrooms;
+		ListClassroom lc= new ListClassroom(classrooms);
+		return lc;
 	}
 }

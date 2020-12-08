@@ -85,7 +85,7 @@ public class Actuator {
 		HttpEntity<String> entity = new HttpEntity<String>(body,headers);
 
 		ResponseEntity<String> Data = rest.exchange(
-			url, HttpMethod.POST, entity, String.class);
+				"http://localhost:8080/~/"+this.url+"/DATA", HttpMethod.POST, entity, String.class);
 		System.out.println(Data.getBody());
 	}
 }
