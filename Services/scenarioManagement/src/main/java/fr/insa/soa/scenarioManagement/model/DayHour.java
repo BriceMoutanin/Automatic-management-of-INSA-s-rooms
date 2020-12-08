@@ -26,7 +26,26 @@ public class DayHour {
 		}else{
 			return false;
 		}
-		
 	}
+	public static boolean isItDark(){
+		Calendar cal = Calendar.getInstance();
+		int hourOfDay= cal.get(Calendar.HOUR_OF_DAY);
+		if(hourOfDay>17 && hourOfDay<22){
+			return true;
+		}else{
+			return false;
+		}
+	}
+	
+	public static boolean isItForbidden(){
+		Calendar cal = Calendar.getInstance();
+		int hourOfDay= cal.get(Calendar.HOUR_OF_DAY);
+		if(hourOfDay>22 || hourOfDay<6){
+			return true;
+		}else{
+			return false;
+		}
+	}
+
 
 }

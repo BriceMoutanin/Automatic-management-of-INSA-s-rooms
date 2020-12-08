@@ -25,10 +25,29 @@ public class MainResource {
 			try {
 				ArrayList<Classroom> lc=restTemplate.getForObject(urlClassrooms, ListClassroom.class).getListCl();
 				for (Classroom c:lc) {
-					if (DayHour.isItWorkDay()){
-					 sr.setHeating(c); 
-					 System.out.println("hakunamatata");
+					
+					if (DayHour.isItWorkDay() && DayHour.isItWorkHours()){
+						sr.setHeating(c); 
+						System.out.println("hakunamatata");
+					
+						sr.openWindows(c);
+						System.out.println("windows handled");
 					}
+					
+					if(DayHour.isItWorkDay() && DayHour.isItDark()){
+						sr.PresenceDetection(c);
+						System.out.println("presence in the dark handled");
+					}
+					
+					if(DayHour.isItForbidden() || !DayHour.isItWorkDay()){
+						sr.setAlarmIfPresence(c);
+						System.out.println("Alarm handled");
+					}
+					
+					if(!DayHour.isItWorkDay() || !DayHour.isItWorkHours()){
+						sr.TurnOffEverything(c);
+					}
+					
 				}
 				TimeUnit.SECONDS.sleep(20);
 				
