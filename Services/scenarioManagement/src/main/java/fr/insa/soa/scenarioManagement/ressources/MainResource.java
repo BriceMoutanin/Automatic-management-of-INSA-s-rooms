@@ -10,7 +10,6 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.concurrent.TimeUnit;
 
-import fr.insa.soa.mainManagement.model.DayHour;
 import fr.insa.soa.scenarioManagement.model.*;
 import fr.insa.soa.scenarioManagement.ressources.ScenarioResource;
 

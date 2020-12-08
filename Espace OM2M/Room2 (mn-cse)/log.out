@@ -12646,3 +12646,98 @@ Response in Router= ResponsePrimitive [responseStatusCode=2001,
  location=/Room2/cin-249663484,
  contentType=application/xml,
 ]
+[2020-12-08 15:39:22,500 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+Starting Data Mapper
+[2020-12-08 15:39:22,500 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+Registering XML Mapper Service..
+[2020-12-08 15:39:23,062 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+XML Mapper service registered.
+[2020-12-08 15:39:23,062 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+Registering JSON Mapper Service..
+[2020-12-08 15:39:23,296 INFO] - org.eclipse.om2m.datamapping.jaxb.Activator 
+JSON Mapper service registered.
+[2020-12-08 15:39:23,296 INFO] - org.eclipse.om2m.binding.http.Activator 
+Register HTTP RestClientService..
+[2020-12-08 15:39:23,296 INFO] - org.eclipse.om2m.binding.http.Activator 
+HTTP RestClientService is registered.
+[2020-12-08 15:39:23,296 INFO] - org.eclipse.om2m.persistence.eclipselink.Activator 
+Starting Persistence JPA plugin...
+[2020-12-08 15:39:23,296 INFO] - org.eclipse.om2m.binding.http.Activator 
+HttpService discovered
+[2020-12-08 15:39:23,296 INFO] - org.eclipse.om2m.binding.http.Activator 
+Register / context
+[2020-12-08 15:39:23,296 INFO] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl 
+Initializing Database...
+[2020-12-08 15:39:23,296 INFO] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl 
+Creating new EntityManagerFactory...
+[2020-12-08 15:39:23,328 INFO] - org.eclipse.om2m.core.Activator 
+Starting CSE...
+[2020-12-08 15:39:23,328 INFO] - org.eclipse.om2m.core.Activator 
+Added Data Mapper Service: application/xml
+[2020-12-08 15:39:23,328 INFO] - org.eclipse.om2m.core.Activator 
+Added Data Mapper Service: application/json
+[2020-12-08 15:39:23,328 INFO] - org.eclipse.om2m.core.Activator 
+Rest client service discovered. Protocol: http
+[2020-12-08 15:39:23,328 INFO] - org.eclipse.om2m.webapp.resourcesbrowser.xml.Activator 
+HttpService discovered
+[2020-12-08 15:39:23,328 INFO] - org.eclipse.om2m.webapp.resourcesbrowser.xml.Activator 
+Register /webpage http context
+[2020-12-08 15:39:23,968 INFO] - org.eclipse.om2m.persistence.eclipselink.internal.DBServiceJPAImpl 
+DataBase initialized.
+[2020-12-08 15:39:23,984 INFO] - org.eclipse.om2m.persistence.eclipselink.Activator 
+Registering Database (JPA-EL) Service
+[2020-12-08 15:39:23,984 INFO] - org.eclipse.om2m.core.Activator 
+DataBase persistence service discovered
+[2020-12-08 15:39:23,984 INFO] - org.eclipse.om2m.core.thread.CoreExecutor 
+Creating thread pool with corePoolSize=5 & maximumSize=50
+[2020-12-08 15:39:23,984 INFO] - org.eclipse.om2m.core.CSEInitializer 
+Initializating the cseBase
+[2020-12-08 15:39:23,999 INFO] - org.eclipse.om2m.core.CSEInitializer 
+cseBase already initialized
+[2020-12-08 15:39:23,999 INFO] - org.eclipse.om2m.core.Activator 
+Registering CseService...
+[2020-12-08 15:39:23,999 INFO] - org.eclipse.om2m.binding.http.Activator 
+CseService discovered
+[2020-12-08 15:39:23,999 INFO] - org.eclipse.om2m.core.Activator 
+CSE Started
+[2020-12-08 15:52:06,445 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+----------------------------------------------------------------------------------------------
+[2020-12-08 15:52:06,447 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Built RequestPrimitive: RequestPrimitive [to=,
+ ]
+[2020-12-08 15:52:06,447 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Content type headers: application/xml
+[2020-12-08 15:52:06,447 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Header value: application/xml
+[2020-12-08 15:52:06,447 INFO] - org.eclipse.om2m.binding.http.RestHttpServlet 
+Accept header: text/plain, application/json, application/*+json, */*
+[2020-12-08 15:52:06,447 INFO] - org.eclipse.om2m.core.router.Router 
+Received request in Router: RequestPrimitive [operation=2,
+ to=,
+ from=admin:admin,
+ returnContentType=application/xml,
+ requestContentType=application/xml,
+ queryStrings={}]
+[2020-12-08 15:52:06,449 INFO] - org.eclipse.om2m.core.router.Router 
+Request handling in the current CSE: 
+[2020-12-08 15:52:06,450 INFO] - org.eclipse.om2m.core.router.Router 
+ResourceController to be used [CSEBaseController]
+[2020-12-08 15:52:06,472 INFO] - org.eclipse.om2m.core.router.Router 
+Response in Router= ResponsePrimitive [responseStatusCode=2000,
+ content=<?xml version="1.0" encoding="UTF-8"?>
+<m2m:cb xmlns:m2m="http://www.onem2m.org/xml/protocols" rn="Room2">
+   <ty>5</ty>
+   <ri>/Room2</ri>
+   <ct>20201118T164858</ct>
+   <lt>20201118T164858</lt>
+   <acpi>/Room2/acp-558582104</acpi>
+   <cst>1</cst>
+   <csi>Room2</csi>
+   <srt>1 2 3 4 5 9 14 15 16 17 23</srt>
+   <poa>http://127.0.0.1:8282/</poa>
+</m2m:cb>
+,
+ to=admin:admin,
+ from=/Room2,
+ contentType=application/xml,
+]

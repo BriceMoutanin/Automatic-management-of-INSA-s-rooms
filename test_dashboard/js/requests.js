@@ -71,4 +71,55 @@ $(document).ready(function(){
       $("#Room1").html(text);
     }
   });
+
+  $.ajax({
+    crossDomain:true,
+    type: "GET",
+    url: "http://localhost:8081/GEI/Room2/info",
+    success: function (data) {
+      var text = `<b>${data.name}</b><br>
+                  Temperature: ${data.temp.value} °C<br>
+                  Presence: `;
+      if(`${data.presence.value}`==0){
+        text+=`none<br>`;
+      }
+      //LIGHTS
+      for (var i = 0; i < `${data.lights.length}`; i++) {
+        text+=`Light `+(i+1)+` : `
+        if(`${data.lights[i].value}`==0){
+          text+=`OFF<br>`;
+        }else{
+          text+=`ON<br>`;
+        }
+      }
+      //WINDOWS
+      for (var i = 0; i < `${data.windows.length}`; i++) {
+        text+=`Window `+(i+1)+` : `;
+        if(`${data.windows[i].value}`==0){
+          text+=`CLOSED<br>`;
+        }else{
+            text+=`OPEN<br>`;
+          }
+      }
+      //DOORS
+      for (var i = 0; i < `${data.doors.length}`; i++) {
+        text+=`Door `+(i+1)+` : `
+        if(`${data.doors[i].value}`==0){
+          text+=`CLOSED<br>`;
+        }else{
+            text+=`OPEN<br>`;
+          }
+      }
+      //HEATING
+      for (var i = 0; i < `${data.heating.length}`; i++) {
+        text+=`Heating `+(i+1)+` : `;
+        if(`${data.heating[i].value}`==0){
+          text+=`OFF<br>`;
+        }else{
+          text+=`ON<br>`;
+        }
+      }
+      $("#Room2").html(text);
+    }
+  });
 });
