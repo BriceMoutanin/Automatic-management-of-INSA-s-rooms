@@ -20,6 +20,23 @@ $(document).ready(function(){
         $("#mypanel").html(text);
     });
   });*/
+  function room1LightCheck(selectObject) {
+    if(selectObject.checked === true && selectObject.id == "Light1"){
+      selectObject.checked === false;
+    } else {
+
+    }
+  }
+
+  function windowCheck(selectObject) {
+    if(selectObject.checked === true){
+
+    } else {
+      
+    }
+  }
+
+
 $(document).ready(function(){
   $.ajax({
     crossDomain:true,
@@ -29,9 +46,11 @@ $(document).ready(function(){
       var text = `<b>${data.name}</b><br>
                   Temperature: ${data.temp.value} °C<br>
                   Presence: `;
-      if(`${data.presence.value}`==0){
-        text+=`none<br>`;
-      }
+                  if(`${data.presence.value}`==0){
+                    text+=`none<br>`;
+                  } else {
+                    text+=`yes<br>`;
+                  }
       //LIGHTS
       for (var i = 0; i < `${data.lights.length}`; i++) {
         text+=`Light `+(i+1)+` : `
@@ -82,6 +101,8 @@ $(document).ready(function(){
                   Presence: `;
       if(`${data.presence.value}`==0){
         text+=`none<br>`;
+      } else {
+        text+=`yes<br>`;
       }
       //LIGHTS
       for (var i = 0; i < `${data.lights.length}`; i++) {
@@ -120,6 +141,94 @@ $(document).ready(function(){
         }
       }
       $("#Room2").html(text);
+    }
+  });
+
+  $.ajax({
+    crossDomain:true,
+    type: "GET",
+    url: "http://localhost:8081/GEI/Room1/info",
+    success: function (data) {
+      var text = `<b>${data.name}</b><br><br>`;
+      //LIGHTS
+      for (var i = 0; i < `${data.lights.length}`; i++) {
+        text+=`<h5>Light `+(i+1)+`</h5>`
+        text+=`<label class="switch" float="right">`
+        if(`${data.lights[i].value}`==0){
+          text+=`<input type="checkbox" id="Light`+(i+1)+`" onchange="room1LightCheck(this)">`;
+        }else{
+          text+=`<input type="checkbox" id="Light`+(i+1)+`" onchange="room1LightCheck(this)" checked>`;
+        }
+        text+=`<span class="slider round"></span>`
+        text+=`</label>`
+      }
+      $("#Lights1").html(text);
+    }
+  });
+
+  $.ajax({
+    crossDomain:true,
+    type: "GET",
+    url: "http://localhost:8081/GEI/Room2/info",
+    success: function (data) {
+      var text = `<b>${data.name}</b><br><br>`;
+      //LIGHTS
+      for (var i = 0; i < `${data.lights.length}`; i++) {
+        text+=`<h5>Light `+(i+1)+`</h5>`
+        text+=`<label class="switch" float="right">`
+        if(`${data.lights[i].value}`==0){
+          text+=`<input type="checkbox" id="Light`+(i+1)+`" onchange="lightCheck(this)">`;
+        }else{
+          text+=`<input type="checkbox" id="Light`+(i+1)+`" onchange="lightCheck(this)" checked>`;
+        }
+        text+=`<span class="slider round"></span>`
+        text+=`</label>`
+      }
+      $("#Lights2").html(text);
+    }
+  });
+
+  $.ajax({
+    crossDomain:true,
+    type: "GET",
+    url: "http://localhost:8081/GEI/Room1/info",
+    success: function (data) {
+      var text = `<b>${data.name}</b><br><br>`;
+      //WINDOWS
+      for (var i = 0; i < `${data.windows.length}`; i++) {
+        text+=`<h5>Window `+(i+1)+`</h5>`
+        text+=`<label class="switch" float="right">`
+        if(`${data.windows[i].value}`==0){
+          text+=`<input type="checkbox" id="Window`+(i+1)+`" onchange="windowCheck(this)">`;
+        }else{
+          text+=`<input type="checkbox" id="Window`+(i+1)+`" onchange="windowCheck(this)" checked>`;
+        }
+        text+=`<span class="slider round"></span>`
+        text+=`</label>`
+      }
+      $("#Windows1").html(text);
+    }
+  });
+
+  $.ajax({
+    crossDomain:true,
+    type: "GET",
+    url: "http://localhost:8081/GEI/Room2/info",
+    success: function (data) {
+      var text = `<b>${data.name}</b><br><br>`;
+      //WINDOWS
+      for (var i = 0; i < `${data.windows.length}`; i++) {
+        text+=`<h5>Window `+(i+1)+`</h5>`
+        text+=`<label class="switch" float="right">`
+        if(`${data.windows[i].value}`==0){
+          text+=`<input type="checkbox" id="Window`+(i+1)+`" onchange="windowCheck(this)">`;
+        }else{
+          text+=`<input type="checkbox" id="Window`+(i+1)+`" onchange="windowCheck(this)" checked>`;
+        }
+        text+=`<span class="slider round"></span>`
+        text+=`</label>`
+      }
+      $("#Windows2").html(text);
     }
   });
 });
