@@ -25,6 +25,23 @@ public class ClassroomResource {
 	ArrayList<Classroom> classrooms = new ArrayList<Classroom>();
 	String url="";
 
+	//Recupere la temperature extérieure
+	@CrossOrigin(origins = "*")
+	@GetMapping("/tempExt")
+	static public String getTempExt(){
+		String url="http://localhost:8080/GEI/OutsideTemperature/DATA/la";
+		RestTemplate rest = new RestTemplate();
+		HttpHeaders headers = new HttpHeaders();
+		headers.set("x-m2m-origin", "admin:admin");
+		headers.set("Content-Type", "application/xml");
+		HttpEntity<String> entity = new HttpEntity<String>(headers);
+		ResponseEntity<String> response = rest.exchange(
+				url, HttpMethod.GET, entity, String.class);
+		String responseBody= response.getBody().replaceAll("/", "");
+		String[] arrOfStr = responseBody.split("<con>",0);
+		return arrOfStr[1];
+	}
+	
 	// Recuperer les noms des salles à partir des ports
 	@CrossOrigin(origins = "*")
 	@GetMapping("/rooms")

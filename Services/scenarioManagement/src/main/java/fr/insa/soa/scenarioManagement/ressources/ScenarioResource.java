@@ -73,7 +73,7 @@ public class ScenarioResource {
 	}
 	@GetMapping("/presenceOFF")
 	public void PresenceDetectionOFF(Classroom classroom) {
-		Sensor p; 
+		Sensor p;  
 		ArrayList<Actuator> l_list= classroom.getLights();
 		p = classroom.getPresence();
 		if (p.getValue()==0){
@@ -88,7 +88,7 @@ public class ScenarioResource {
 	//SCENARIO Présence --> Allumer l'alarme
 	@GetMapping("/alarm")
 	public void setAlarmIfPresence(Classroom classroom){
-		Actuator alarm = new Actuator("http://localhost:8080/in-cse/Alarme/DATA","Alarme",0);
+		Actuator alarm = new Actuator("http://localhost:8080/GEI/Alarme/DATA","Alarme",0);
 		Sensor p = classroom.getPresence();
 		if (p.getValue()==1 && alarm.getValue()!=1){
 			alarm.postDataOM2M(1);

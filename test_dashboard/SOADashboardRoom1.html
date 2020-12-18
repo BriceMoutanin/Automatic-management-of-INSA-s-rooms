@@ -28,13 +28,13 @@
       width: 60px;
       height: 34px;
     }
-    
-    .switch input { 
+
+    .switch input {
       opacity: 0;
       width: 0;
       height: 0;
     }
-    
+
     .slider {
       position: absolute;
       cursor: pointer;
@@ -46,7 +46,7 @@
       -webkit-transition: .4s;
       transition: .4s;
     }
-    
+
     .slider:before {
       position: absolute;
       content: "";
@@ -58,30 +58,103 @@
       -webkit-transition: .4s;
       transition: .4s;
     }
-    
+
     input:checked + .slider {
       background-color: #2196F3;
     }
-    
+
     input:focus + .slider {
       box-shadow: 0 0 1px #2196F3;
     }
-    
+
     input:checked + .slider:before {
       -webkit-transform: translateX(26px);
       -ms-transform: translateX(26px);
       transform: translateX(26px);
     }
-    
+
     /* Rounded sliders */
     .slider.round {
       border-radius: 34px;
     }
-    
+
     .slider.round:before {
       border-radius: 50%;
     }
     </style>
+
+    <script type="text/javascript">
+    setInterval("refreshTempExt();",5000);
+    function refreshTempExt(){
+      $('#tempExt').load(location.href + ' #time');
+      $.ajax({
+            crossDomain:true,
+            type: "GET",
+            url: "http://localhost:8081/GEI/tempExt",
+            success: function (data) {
+              var text=`<b>${data} °C</b>`;
+              console.log("olaaaaaaaaaa");
+              $("#tempExt").html(text);
+            }
+      });
+    }
+      setInterval("refreshOverview();",15000);
+      function refreshOverview(){
+          $('#Room1').load(location.href + ' #time');
+          $.ajax({
+                crossDomain:true,
+                type: "GET",
+                url: "http://localhost:8081/GEI/Room1/info",
+                success: function (data) {
+                var text = `<b>${data.name}</b><br>
+                            Temperature: ${data.temp.value} °C<br>
+                            Presence: `;
+                            if(`${data.presence.value}`==0){
+                                text+=`none<br>`;
+                            } else {
+                                text+=`yes<br>`;
+                            }
+                //LIGHTS
+                for (var i = 0; i < `${data.lights.length}`; i++) {
+                    text+=`Light `+(i+1)+` : `
+                    if(`${data.lights[i].value}`==0){
+                    text+=`OFF<br>`;
+                    }else{
+                    text+=`ON<br>`;
+                    }
+                }
+                //WINDOWS
+                for (var i = 0; i < `${data.windows.length}`; i++) {
+                    text+=`Window `+(i+1)+` : `;
+                    if(`${data.windows[i].value}`==0){
+                    text+=`CLOSED<br>`;
+                    }else{
+                        text+=`OPEN<br>`;
+                    }
+                }
+                //DOORS
+                for (var i = 0; i < `${data.doors.length}`; i++) {
+                    text+=`Door `+(i+1)+` : `
+                    if(`${data.doors[i].value}`==0){
+                    text+=`CLOSED<br>`;
+                    }else{
+                        text+=`OPEN<br>`;
+                    }
+                }
+                //HEATING
+                for (var i = 0; i < `${data.heating.length}`; i++) {
+                    text+=`Heating `+(i+1)+` : `;
+                    if(`${data.heating[i].value}`==0){
+                    text+=`OFF<br>`;
+                    }else{
+                    text+=`ON<br>`;
+                    }
+                }
+                $("#Room1").html(text);
+                }
+            });
+        }
+    </script>
 
 </head>
 
@@ -137,15 +210,6 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-                    <!-- Page Heading -->
-                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                                class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
-                    </div>
-
-                    <!-- Content Row -->
-
                     <div class="row">
 
                         <!-- Area Chart -->
@@ -153,7 +217,7 @@
                             <div class="card shadow mb-4">
                                 <!-- Card Header - Dropdown -->
                                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">GEI OVERVIEW</h6>
+                                    <h6 class="m-0 font-weight-bold text-primary">Room 1 OVERVIEW</h6>
                                 </div>
                                 <!-- Card Body -->
                                 <div class="card-body">
@@ -165,14 +229,16 @@
                         <div class="col-xl-4 col-lg-5">
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">Lights</h6>
+                                    <h6 class="m-0 font-weight-bold text-primary">Exterior temperature</h6>
                                 </div>
                                 <!-- Card Body -->
                                 <div class="card-body">
-                                    <span id="Lights1"></span>
+                                    <span id="tempExt"></span>
                                 </div>
                             </div>
                         </div>
+
+
 
                         <div class="col-xl-8 col-lg-7">
                             <div class="card shadow mb-4">
@@ -182,6 +248,17 @@
                                 <!-- Card Body -->
                                 <div class="card-body">
                                     <span id="Windows1"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-5">
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">Lights</h6>
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <span id="Lights1"></span>
                                 </div>
                             </div>
                         </div>

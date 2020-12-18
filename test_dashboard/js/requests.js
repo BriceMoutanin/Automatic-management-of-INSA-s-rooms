@@ -1,38 +1,25 @@
 
-/*$(document).ready(function(){
-
-  const url="http://localhost:8081/GEI/classrooms/info";
-
-  $.get(url, function(data, status){
-      console.log('${data}')
-      $('#a').html(data);
-  });
-
-});
-
-
-$(document).ready(function(){
-  const url='http://localhost:8081/GEI/classrooms/info';
-  $.getJSON(url, function(data) {
-
-        var text = `name: ${data.name}<br>
-                    port: ${data.port}<br>`
-        $("#mypanel").html(text);
-    });
-  });*/
-  function room1LightCheck(selectObject) {
-    if(selectObject.checked === true && selectObject.id == "Light1"){
-      selectObject.checked === false;
-    } else {
-
-    }
-  }
-
-  function windowCheck(selectObject) {
+  function actuatorCheck(selectObject) {
+    console.log(selectObject.id);
+    var data;
+    var url="http://localhost:8083/interface/post/"+selectObject.id+"/";
+    console.log(url);
     if(selectObject.checked === true){
-
+      $.ajax({
+        crossDomain:true,
+        type: "GET",
+        url: url+"1",
+        success: function(msg) {
+        }
+      });
     } else {
-      
+      $.ajax({
+        crossDomain:true,
+        type: "GET",
+        url: url+"0",
+        success: function(msg) {
+        }
+      });
     }
   }
 
@@ -155,9 +142,9 @@ $(document).ready(function(){
         text+=`<h5>Light `+(i+1)+`</h5>`
         text+=`<label class="switch" float="right">`
         if(`${data.lights[i].value}`==0){
-          text+=`<input type="checkbox" id="Light`+(i+1)+`" onchange="room1LightCheck(this)">`;
+          text+=`<input type="checkbox" id="Room1/Light`+(i+1)+`" onchange="actuatorCheck(this)">`;
         }else{
-          text+=`<input type="checkbox" id="Light`+(i+1)+`" onchange="room1LightCheck(this)" checked>`;
+          text+=`<input type="checkbox" id="Room1/Light`+(i+1)+`" onchange="actuatorCheck(this)" checked>`;
         }
         text+=`<span class="slider round"></span>`
         text+=`</label>`
@@ -177,9 +164,9 @@ $(document).ready(function(){
         text+=`<h5>Light `+(i+1)+`</h5>`
         text+=`<label class="switch" float="right">`
         if(`${data.lights[i].value}`==0){
-          text+=`<input type="checkbox" id="Light`+(i+1)+`" onchange="lightCheck(this)">`;
+          text+=`<input type="checkbox" id="Room2/Light`+(i+1)+`" onchange="lightCheck(this)">`;
         }else{
-          text+=`<input type="checkbox" id="Light`+(i+1)+`" onchange="lightCheck(this)" checked>`;
+          text+=`<input type="checkbox" id="Room2/Light`+(i+1)+`" onchange="lightCheck(this)" checked>`;
         }
         text+=`<span class="slider round"></span>`
         text+=`</label>`
@@ -199,9 +186,9 @@ $(document).ready(function(){
         text+=`<h5>Window `+(i+1)+`</h5>`
         text+=`<label class="switch" float="right">`
         if(`${data.windows[i].value}`==0){
-          text+=`<input type="checkbox" id="Window`+(i+1)+`" onchange="windowCheck(this)">`;
+          text+=`<input type="checkbox" id="Room1/Window`+(i+1)+`" onchange="actuatorCheck(this)">`;
         }else{
-          text+=`<input type="checkbox" id="Window`+(i+1)+`" onchange="windowCheck(this)" checked>`;
+          text+=`<input type="checkbox" id="Room1/Window`+(i+1)+`" onchange="actuatorCheck(this)" checked>`;
         }
         text+=`<span class="slider round"></span>`
         text+=`</label>`
@@ -221,9 +208,9 @@ $(document).ready(function(){
         text+=`<h5>Window `+(i+1)+`</h5>`
         text+=`<label class="switch" float="right">`
         if(`${data.windows[i].value}`==0){
-          text+=`<input type="checkbox" id="Window`+(i+1)+`" onchange="windowCheck(this)">`;
+          text+=`<input type="checkbox" id="Room2/Window`+(i+1)+`" onchange="actuatorCheck(this)">`;
         }else{
-          text+=`<input type="checkbox" id="Window`+(i+1)+`" onchange="windowCheck(this)" checked>`;
+          text+=`<input type="checkbox" id="Room2/Window`+(i+1)+`" onchange="actuatorCheck(this)" checked>`;
         }
         text+=`<span class="slider round"></span>`
         text+=`</label>`
@@ -231,4 +218,17 @@ $(document).ready(function(){
       $("#Windows2").html(text);
     }
   });
+
+    $.ajax({
+          crossDomain:true,
+          type: "GET",
+          url: "http://localhost:8081/GEI/tempExt",
+          success: function (data) {
+            var text=`<b>${data} °C</b>`;
+
+            $("#tempExt").html(text);
+          }
+    });
+
+
 });
