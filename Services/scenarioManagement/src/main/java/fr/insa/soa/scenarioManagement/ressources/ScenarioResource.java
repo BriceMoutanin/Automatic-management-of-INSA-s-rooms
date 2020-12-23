@@ -39,15 +39,15 @@ public class ScenarioResource {
 	// SCENARIO 18°C<TEMP<35°C => ouvrture des fenetres
 	@GetMapping("/windows")
 	public void openWindows(Classroom classroom) {
-		Sensor t = classroom.getTemp();
+		Sensor OutsideTemp = new Sensor("http://localhost:8080/GEI/OutsideTemperature/DATA","OutsideTemperature",0);
 		ArrayList<Actuator> w_list= classroom.getWindows();
-		if (t.getValue()<30 && t.getValue()>18){
+		if (OutsideTemp.getDataOM2M()<30 && OutsideTemp.getDataOM2M()>18){
 			for (int i=0;i<w_list.size();i++){
 				if(w_list.get(i).getValue()!=1){
 					w_list.get(i).postDataOM2M(1);
 				}
 			}
-		}else if (t.getValue()<15 || t.getValue()>35){
+		}else if (OutsideTemp.getDataOM2M()<15 || OutsideTemp.getDataOM2M()>35){
 			for (int i=0;i<w_list.size();i++){
 				if(w_list.get(i).getValue()!=0){
 					w_list.get(i).postDataOM2M(0);
