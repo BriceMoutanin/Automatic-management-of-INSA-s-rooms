@@ -73,6 +73,7 @@
       transform: translateX(26px);
     }
     
+    
     /* Rounded sliders */
     .slider.round {
       border-radius: 34px;
@@ -84,7 +85,21 @@
     </style>
 
     <script type="text/javascript">
-        setInterval("my_function();",15000); 
+    setInterval("refreshTempExt();",10000);
+    function refreshTempExt(){
+      $('#tempExt').load(location.href + ' #time');
+      $.ajax({
+            crossDomain:true,
+            type: "GET",
+            url: "http://localhost:8081/GEI/tempExt",
+            success: function (data) {
+              var text=`<b>${data} °C</b>`;
+              console.log("olaaaaaaaaaa");
+              $("#tempExt").html(text);
+            }
+      });
+    }
+        setInterval("my_function();",10000); 
         function my_function(){
             $('#Room2').load(location.href + ' #time');
             $.ajax({
@@ -220,6 +235,20 @@
                                 </div>
                             </div>
                         </div>
+
+
+                        <div class="col-xl-4 col-lg-5">
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">Exterior temperature</h6>
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <span id="tempExt"></span>
+                                </div>
+                            </div>
+                        </div>
+
 
                         <div class="col-xl-4 col-lg-5">
                             <div class="card shadow mb-4">

@@ -84,7 +84,7 @@
     </style>
 
     <script type="text/javascript">
-    setInterval("refreshTempExt();",5000);
+    setInterval("refreshTempExt();",10000);
     function refreshTempExt(){
       $('#tempExt').load(location.href + ' #time');
       $.ajax({
@@ -98,7 +98,7 @@
             }
       });
     }
-      setInterval("refreshOverview();",15000);
+      setInterval("refreshOverview();",10000);
       function refreshOverview(){
           $('#Room1').load(location.href + ' #time');
           $.ajax({

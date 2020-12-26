@@ -164,9 +164,9 @@ $(document).ready(function(){
         text+=`<h5>Light `+(i+1)+`</h5>`
         text+=`<label class="switch" float="right">`
         if(`${data.lights[i].value}`==0){
-          text+=`<input type="checkbox" id="Room2/Light`+(i+1)+`" onchange="lightCheck(this)">`;
+          text+=`<input type="checkbox" id="Room2/Light`+(i+1)+`" onchange="actuatorCheck(this)">`;
         }else{
-          text+=`<input type="checkbox" id="Room2/Light`+(i+1)+`" onchange="lightCheck(this)" checked>`;
+          text+=`<input type="checkbox" id="Room2/Light`+(i+1)+`" onchange="actuatorCheck(this)" checked>`;
         }
         text+=`<span class="slider round"></span>`
         text+=`</label>`
