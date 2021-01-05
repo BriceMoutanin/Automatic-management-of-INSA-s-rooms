@@ -44,15 +44,14 @@ Ensuite, il est nécessaire de récupérer les différents services java, et les
 * cliquer sur le bouton [Finish]
 * Dans le dossier classroomManagement dans votre ProjetExplorer, ouvrir pom.xml, dans l'overview sous Parent, s'assurer que la version de spring correspond à la votre
 * clic droit sur le dossier classroomManagement dans votre ProjetExplorer, Maven > Update Project
-  
-
+--  
 * cliquer sur File> Open Project From File System
 * cliquer sur le bouton [directory]
 * cliquer sur le dossier Services>scenarioManagement
 * cliquer sur le bouton [Finish]
 * Dans le dossier scenarioManagement dans votre ProjetExplorer, ouvrir pom.xml, dans l'overview sous Parent, s'assurer que la version de spring correspond à la votre
 * clic droit sur le dossier scenarioManagement dans votre ProjetExplorer, Maven > Update Project
-<br/>
+--  
 * cliquer sur File> Open Project From File System
 * cliquer sur le bouton [directory]
 * cliquer sur le dossier Services>interfaceManagement
