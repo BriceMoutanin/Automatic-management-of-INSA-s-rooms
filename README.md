@@ -23,14 +23,14 @@ Tout d'abord il est nécessaire de déployer l'architecture OM2M, pour cela appl
 
 
 * se rendre dans le dossier >Espace OM2M>GEI (in-cse)
-`* sous windows, éxecuter start.bat`
-`* sous linux, éxecuter start.sh`
+	* sous windows, éxecuter start.bat`
+	* sous linux, éxecuter start.sh`
 * se rendre dans le dossier >Espace OM2M>Room1 (mn-cse)
-`* sous windows, éxecuter start.bat`
-`* sous linux, éxecuter start.sh`
+	* sous windows, éxecuter start.bat`
+	* sous linux, éxecuter start.sh`
 * se rendre dans le dossier >Espace OM2M>Room2 (mn-cse)
-`* sous windows, éxecuter start.bat`
-`* sous linux, éxecuter start.sh`
+	* sous windows, éxecuter start.bat`
+	* sous linux, éxecuter start.sh`
 
 
 Ensuite, il est nécessaire de récupérer les différents services java, et les adapter à votre machine:
@@ -44,14 +44,15 @@ Ensuite, il est nécessaire de récupérer les différents services java, et les
 * cliquer sur le bouton [Finish]
 * Dans le dossier classroomManagement dans votre ProjetExplorer, ouvrir pom.xml, dans l'overview sous Parent, s'assurer que la version de spring correspond à la votre
 * clic droit sur le dossier classroomManagement dans votre ProjetExplorer, Maven > Update Project
------------------
+  
+
 * cliquer sur File> Open Project From File System
 * cliquer sur le bouton [directory]
 * cliquer sur le dossier Services>scenarioManagement
 * cliquer sur le bouton [Finish]
 * Dans le dossier scenarioManagement dans votre ProjetExplorer, ouvrir pom.xml, dans l'overview sous Parent, s'assurer que la version de spring correspond à la votre
 * clic droit sur le dossier scenarioManagement dans votre ProjetExplorer, Maven > Update Project
------------------
+<br/>
 * cliquer sur File> Open Project From File System
 * cliquer sur le bouton [directory]
 * cliquer sur le dossier Services>interfaceManagement
